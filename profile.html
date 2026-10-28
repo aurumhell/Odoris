@@ -1,0 +1,367 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Личный кабинет — ODORIS</title>
+    <link rel="stylesheet" href="profile.css">
+</head>
+<body>
+
+<!-- Шапка сайта ODORIS -->
+<header>
+    <div class="container">
+        <div class="navbar-row">
+            <a href="main.html" class="navbar-brand">
+                <img src="assets/logo.png" alt="ODORIS Logo">
+            </a>
+
+            <div class="search-box">
+                <img src="assets/search.png" alt="Поиск" class="search-inline-icon">
+                <input type="text" placeholder="Поиск ароматов, брендов, нот...">
+                <button type="button" class="search-button">Найти</button>
+            </div>
+
+            <a href="#" class="delivery-link">
+                <img src="assets/geo.png" alt="Город">
+                <span>Москва</span>
+            </a>
+
+            <div class="header-actions">
+                <a href="favorite.html" class="header-action" title="Избранное">
+                    <img src="assets/favorite.png" alt="Избранное">
+                    <span class="counter-badge">3</span>
+                </a>
+                <a href="corzina.html" class="header-action" title="Корзина">
+                    <img src="assets/corz.png" alt="Корзина">
+                    <span class="counter-badge">2</span>
+                </a>
+                <a href="profile.html" class="header-action active" title="Профиль">
+                    <img src="assets/profile.png" alt="Профиль">
+                </a>
+            </div>
+        </div>
+
+        <!-- Подменю каталога -->
+        <div class="header-subnav">
+            <ul class="nav-list">
+                <li><a href="main.html" class="nav-link">Главная</a></li>
+                <li><a href="collection.html" class="nav-link">Коллекции</a></li>
+                <li><a href="season.html" class="nav-link">Сезонные</a></li>
+                <li><a href="hit.html" class="nav-link">Хиты</a></li>
+                <li><a href="nis.html" class="nav-link">Нишевая</a></li>
+                <li><a href="lw.html" class="nav-link">Для неё</a></li>
+                <li><a href="lm.html" class="nav-link">Для него</a></li>
+            </ul>
+        </div>
+    </div>
+</header>
+
+<!-- Основной контент личного кабинета -->
+<main class="profile-main">
+    <div class="container">
+
+        <nav class="breadcrumbs">
+            <a href="main.html">Главная</a>
+            <span class="sep">/</span>
+            <span class="current">Личный кабинет</span>
+        </nav>
+
+        <div class="profile-page-header">
+            <h1 class="profile-page-title">Мой кабинет</h1>
+            <p class="profile-page-subtitle">Управление личными данными, статусом в программе лояльности и заказами</p>
+        </div>
+
+        <div class="profile-grid">
+
+            <!-- Боковая навигация -->
+            <aside class="profile-sidebar">
+                <div class="user-identity">
+                    <div class="avatar-frame">
+                        <img src="assets/profile.png" alt="Аватар пользователя" class="user-avatar">
+                    </div>
+                    <h2 class="user-fullname">Анастасия Волочкова</h2>
+                    <span class="user-badge">Privilège Client</span>
+                </div>
+
+                <ul class="sidebar-menu">
+                    <li class="active"><a href="#personal-data">Персональные данные</a></li>
+                    <li><a href="#orders">История заказов</a></li>
+                    <li><a href="#addresses">Адреса доставки</a></li>
+                    <li><a href="#security">Безопасность</a></li>
+                    <li class="menu-divider"></li>
+                    <li><a href="favorite.html">Избранные ароматы</a></li>
+                    <li class="logout-link"><a href="main.html">Выйти из профиля</a></li>
+                </ul>
+            </aside>
+
+            <!-- Контентная область -->
+            <div class="profile-body">
+
+                <!-- Сводные данные / баллы -->
+                <div class="stats-overview">
+                    <div class="stat-item">
+                        <span class="stat-caption">Баланс привилегий</span>
+                        <span class="stat-number">2 450 <small>баллов</small></span>
+                        <p class="stat-hint">1 балл = 1 ₽ при оплате заказа</p>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-caption">Персональная скидка</span>
+                        <span class="stat-number">10%</span>
+                        <p class="stat-hint">До скидки 15% осталось 5 200 ₽</p>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-caption">Оформлено заказов</span>
+                        <span class="stat-number">5</span>
+                        <p class="stat-hint">1 заказ доставляется курьером</p>
+                    </div>
+                </div>
+
+                <!-- Форма личных данных -->
+                <section class="profile-card" id="personal-data">
+                    <div class="card-title-wrap">
+                        <h2 class="card-title">Персональные данные</h2>
+                        <p class="card-description">Контактные данные для связи и подтверждения доставки</p>
+                    </div>
+
+                    <form>
+                        <div class="form-grid-2">
+                            <div class="form-field">
+                                <label for="fName">Имя</label>
+                                <input type="text" id="fName" value="Анастасия">
+                            </div>
+                            <div class="form-field">
+                                <label for="lName">Фамилия</label>
+                                <input type="text" id="lName" value="Волочкова">
+                            </div>
+                        </div>
+
+                        <div class="form-grid-2">
+                            <div class="form-field">
+                                <label for="userEmail">Электронный адрес</label>
+                                <input type="email" id="userEmail" value="a.volkova@odoris.ru">
+                            </div>
+                            <div class="form-field">
+                                <label for="userPhone">Номер телефона</label>
+                                <input type="tel" id="userPhone" value="+7 (999) 876-54-32">
+                            </div>
+                        </div>
+
+                        <div class="form-grid-2">
+                            <div class="form-field">
+                                <label for="birthDate">Дата рождения</label>
+                                <input type="date" id="birthDate" value="1995-06-18">
+                            </div>
+                            <div class="form-field">
+                                <label for="preferredCategory">Парфюмерные предпочтения</label>
+                                <select id="preferredCategory">
+                                    <option value="1" selected>Селективная и нишевая</option>
+                                    <option value="2">Цветочные и восточные</option>
+                                    <option value="3">Древесные и пряные</option>
+                                    <option value="4">Свежие и цитрусовые</option>
+                                </select>
+                            </div>
+                        </div>
+
+                        <div class="form-controls">
+                            <button type="button" class="btn-bordo">Сохранить изменения</button>
+                            <button type="reset" class="btn-soft">Сбросить</button>
+                        </div>
+                    </form>
+                </section>
+
+                <!-- История заказов -->
+                <section class="profile-card" id="orders">
+                    <div class="card-title-wrap">
+                        <h2 class="card-title">История заказов</h2>
+                        <p class="card-description">Список текущих отправок и завершенных покупок</p>
+                    </div>
+
+                    <div class="orders-stack">
+                        <div class="order-box">
+                            <div class="order-box-header">
+                                <div>
+                                    <span class="order-code">№OD-90412</span>
+                                    <span class="order-timestamp">от 18 октября 2026</span>
+                                </div>
+                                <span class="order-tag processing">Передано в курьерскую службу</span>
+                            </div>
+
+                            <div class="order-items-list">
+                                <div class="order-item-row">
+                                    <div class="item-thumb">
+                                        <img src="assets/eclat-verte.png" alt="Éclat Verte">
+                                    </div>
+                                    <div class="item-meta">
+                                        <h3 class="item-name">Éclat Verte Extrait</h3>
+                                        <p class="item-spec">100 мл • Парфюмерный экстракт</p>
+                                    </div>
+                                    <span class="item-qty">1 шт.</span>
+                                    <span class="item-cost">14 200 ₽</span>
+                                </div>
+
+                                <div class="order-item-row">
+                                    <div class="item-thumb">
+                                        <img src="assets/solar.png" alt="Solar Ambience">
+                                    </div>
+                                    <div class="item-meta">
+                                        <h3 class="item-name">Solar Ambience Parfum</h3>
+                                        <p class="item-spec">50 мл • Духи</p>
+                                    </div>
+                                    <span class="item-qty">1 шт.</span>
+                                    <span class="item-cost">9 800 ₽</span>
+                                </div>
+                            </div>
+
+                            <div class="order-box-footer">
+                                <div class="order-total-sum">
+                                    Итого к оплате: <strong>24 000 ₽</strong>
+                                </div>
+                                <div class="order-box-actions">
+                                    <button type="button" class="btn-outline-bordo">Трек-номер</button>
+                                    <button type="button" class="btn-soft">Детали заказа</button>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="order-box">
+                            <div class="order-box-header">
+                                <div>
+                                    <span class="order-code">№OD-87301</span>
+                                    <span class="order-timestamp">от 03 сентября 2026</span>
+                                </div>
+                                <span class="order-tag complete">Доставлен</span>
+                            </div>
+
+                            <div class="order-items-list">
+                                <div class="order-item-row">
+                                    <div class="item-thumb">
+                                        <img src="assets/blue.png" alt="Deep Blue Noir">
+                                    </div>
+                                    <div class="item-meta">
+                                        <h3 class="item-name">Deep Blue Noir</h3>
+                                        <p class="item-spec">100 мл • Парфюмерная вода</p>
+                                    </div>
+                                    <span class="item-qty">1 шт.</span>
+                                    <span class="item-cost">12 500 ₽</span>
+                                </div>
+                            </div>
+
+                            <div class="order-box-footer">
+                                <div class="order-total-sum">
+                                    Сумма покупки: <strong>12 500 ₽</strong>
+                                </div>
+                                <div class="order-box-actions">
+                                    <button type="button" class="btn-outline-bordo">Повторить заказ</button>
+                                    <button type="button" class="btn-soft">Электронный чек</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- Адреса доставки -->
+                <section class="profile-card" id="addresses">
+                    <div class="card-title-wrap">
+                        <h2 class="card-title">Адреса доставки</h2>
+                        <p class="card-description">Сохраненные локации для ускоренного оформления заказов</p>
+                    </div>
+
+                    <div class="address-grid">
+                        <div class="address-item-card is-main">
+                            <span class="main-address-mark">Основной</span>
+                            <h3 class="address-title">Домашний адрес</h3>
+                            <p class="address-street">г. Москва, ул. Большая Никитская, д. 14/2, кв. 38</p>
+                            <p class="address-extra">Подъезд 2, домофон 38В, 5 этаж</p>
+                            <div class="address-links">
+                                <button type="button" class="link-btn">Редактировать</button>
+                                <button type="button" class="link-btn remove">Удалить</button>
+                            </div>
+                        </div>
+
+                        <div class="address-item-card">
+                            <h3 class="address-title">Офис</h3>
+                            <p class="address-street">г. Москва, Пресненская наб., д. 8, стр. 1 (Башня Москва)</p>
+                            <p class="address-extra">Доставка на стойку ресепшн</p>
+                            <div class="address-links">
+                                <button type="button" class="link-btn">Редактировать</button>
+                                <button type="button" class="link-btn remove">Удалить</button>
+                            </div>
+                        </div>
+
+                        <button type="button" class="address-new-card">
+                            <span class="plus-symbol">+</span>
+                            <span>Добавить новый адрес</span>
+                        </button>
+                    </div>
+                </section>
+
+                <!-- Безопасность -->
+                <section class="profile-card" id="security">
+                    <div class="card-title-wrap">
+                        <h2 class="card-title">Безопасность учетной записи</h2>
+                        <p class="card-description">Обновление пароля и параметров аутентификации</p>
+                    </div>
+
+                    <form>
+                        <div class="form-grid-2">
+                            <div class="form-field col-full">
+                                <label for="oldPassword">Действующий пароль</label>
+                                <input type="password" id="oldPassword" placeholder="••••••••••••">
+                            </div>
+                        </div>
+                        <div class="form-grid-2">
+                            <div class="form-field">
+                                <label for="newPass">Новый пароль</label>
+                                <input type="password" id="newPass" placeholder="Не менее 8 знаков">
+                            </div>
+                            <div class="form-field">
+                                <label for="confirmPass">Подтверждение пароля</label>
+                                <input type="password" id="confirmPass" placeholder="Повторите новый пароль">
+                            </div>
+                        </div>
+                        <div class="form-controls">
+                            <button type="button" class="btn-bordo">Обновить пароль</button>
+                        </div>
+                    </form>
+                </section>
+
+            </div>
+        </div>
+    </div>
+</main>
+
+<!-- Подвал ODORIS -->
+
+<footer>
+    <div class="container">
+        <div class="row g-4">
+            <div class="col-md-3">
+                <h5>ODORIS</h5>
+                <p>Галерея селективной и авторской парфюмерии.</p>
+                <p class="small text-white-50">8 800 888 88 88</p>
+            </div>
+            <div class="col-md-3">
+                <h5>О нас</h5>
+                <p><a href="#">Концепция дома</a></p>
+                <p><a href="#">Парфюмеры</a></p>
+                <p><a href="#">Бутики</a></p>
+            </div>
+            <div class="col-md-3">
+                <h5>Клиентам</h5>
+                <p><a href="profile.html">Личный кабинет</a></p>
+                <p><a href="favorite.html">Избранное</a></p>
+                <p><a href="corzina.html">Корзина</a></p>
+            </div>
+            <div class="col-md-3">
+                <h5>Контакты</h5>
+                <p>Барнаул, пр. Ленина, 46</p>
+                <p>Ежедневно с 8:00 до 22:00</p>
+                <p>odoris.support@gmail.com</p>
+            </div>
+        </div>
+    </div>
+</footer>
+
+</body>
+</html>

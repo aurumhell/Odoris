@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Коллекция ароматов — ODORIS</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="collection.css">
+</head>
+<body class="d-flex flex-column min-vh-100">
+
+<!-- Единая шапка ODORIS -->
+<header class="site-header">
+    <div class="header-top">
+        <div class="header-container">
+            <a class="header-logo navbar-brand" href="main.html">
+                <img src="assets/logo.png" alt="ODORIS">
+            </a>
+
+            <form class="search-box" action="collection.html" method="get" role="search" id="catalogSearchForm">
+                <img class="search-inline-icon" src="assets/search.png" alt="" aria-hidden="true">
+                <input type="search" id="catalogSearchInput" name="q" placeholder="Бренд, аромат или нота"
+                       aria-label="Поиск по каталогу" autocomplete="off">
+                <button class="search-button" type="submit">Найти</button>
+            </form>
+
+            <a href="#" class="delivery-link" title="Выбор города">
+                <img src="assets/geo.png" alt="Город">
+                <span>Москва ⌄</span>
+            </a>
+
+            <div class="header-actions">
+                <a href="favorite.html" class="header-action" title="Избранное">
+                    <img src="assets/favorite.png" alt="Избранное">
+                    <span class="counter-badge" id="favCount">3</span>
+                </a>
+                <a href="corzina.html" class="header-action" title="Корзина">
+                    <img src="assets/corz.png" alt="Корзина">
+                    <span class="counter-badge" id="cartCount">2</span>
+                </a>
+                <a href="profile.html" class="header-action" title="Личный кабинет">
+                    <img src="assets/profile.png" alt="Профиль">
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <nav class="header-bottom">
+        <div class="header-container">
+            <ul class="nav-links">
+                <li class="nav-item has-dropdown catalog-item">
+                    <a class="nav-link active" href="collection.html">Каталог ▾</a>
+                    <div class="catalog-dropdown">
+                        <div class="catalog-column">
+                            <h5>Для кого</h5>
+                            <a href="lw.html">Для неё</a>
+                            <a href="lm.html">Для него</a>
+                            <a href="ly.html">Унисекс</a>
+                        </div>
+                        <div class="catalog-column">
+                            <h5>Коллекции</h5>
+                            <a href="nis.html">Нишевая парфюмерия</a>
+                            <a href="season.html">Сезонные ароматы</a>
+                            <a href="hit.html">Хиты продаж</a>
+                        </div>
+                        <div class="catalog-column">
+                            <h5>Подбор аромата</h5>
+                            <p>Найди аромат под настроение и характер.</p>
+                            <a href="collection.html" class="catalog-more">Вся коллекция →</a>
+                        </div>
+                    </div>
+                </li>
+                <li class="nav-item"><a class="nav-link" href="collection.html">Бренды</a></li>
+                <li class="nav-item"><a class="nav-link" href="season.html">Сезонные</a></li>
+                <li class="nav-item"><a class="nav-link" href="hit.html">Хиты</a></li>
+                <li class="nav-item"><a class="nav-link" href="nis.html">Нишевая</a></li>
+                <li class="nav-item"><a class="nav-link" href="#">О нас</a></li>
+                <li class="nav-item"><a class="nav-link" href="#">Доставка и оплата</a></li>
+            </ul>
+        </div>
+    </nav>
+</header>
+
+<main class="collection-page flex-grow-1">
+    <section class="collection-hero" aria-label="Коллекция ODORIS">
+        <div class="collection-hero-copy">
+            <p class="collection-kicker">ODORIS · PARFUMERIE D’AUTEUR</p>
+            <h1>Искусство<br>быть <em>собой</em></h1>
+            <p class="collection-lead">Коллекция ароматов, в которых характер встречается с эмоцией. Найдите свой
+                неповторимый шлейф.</p>
+            <a class="collection-hero-link" href="#catalogGrid">Исследовать коллекцию <span>↗</span></a>
+            <div class="collection-hero-meta"><span>01 / 12</span><span>Ароматы с характером</span></div>
+        </div>
+        <div class="collection-hero-art">
+            <div class="hero-halo"></div>
+            <div class="hero-ring ring-a"></div>
+            <div class="hero-ring ring-b"></div>
+            <span class="hero-side-note">SCENT IS A MEMORY</span>
+            <img src="assets/ambre-no.png" alt="Флакон L’Automne Doré" class="collection-hero-bottle">
+            <span class="hero-art-index">A.01</span>
+        </div>
+    </section>
+    <div class="breadcrumbs">
+        <a href="main.html">Главная</a> <span class="sep">/</span> Коллекция ароматов
+    </div>
+
+    <div class="d-flex flex-column flex-md-row justify-content-between align-items-md-end mb-4 border-bottom pb-3 gap-3">
+        <div>
+            <span class="eyebrow">Галерея селектива</span>
+            <h1 class="h2 mb-1" style="font-family: Georgia, serif; color: var(--ink);">Полная коллекция ароматов</h1>
+            <p class="text-muted small mb-0">Откройте шедевры мировой парфюмерии, созданные признанными мастерами</p>
+        </div>
+        <div class="d-flex align-items-center gap-2">
+            <label for="sortSelect" class="small text-muted text-nowrap mb-0">Сортировка:</label>
+            <select id="sortSelect" class="form-select form-select-sm"
+                    style="border-radius: 0; border-color: var(--line); width: auto;">
+                <option value="popular">По популярности</option>
+                <option value="price-asc">По возрастанию цены</option>
+                <option value="price-desc">По убыванию цены</option>
+            </select>
+        </div>
+    </div>
+
+    <!-- Быстрые фильтры по категориям -->
+    <div class="d-flex flex-wrap gap-2 mb-4" id="categoryFilters">
+        <button class="volume-option active" type="button" data-filter="all">Все ароматы</button>
+        <button class="volume-option" type="button" data-filter="for-her">Для неё</button>
+        <button class="volume-option" type="button" data-filter="for-him">Для него</button>
+        <button class="volume-option" type="button" data-filter="unisex">Унисекс</button>
+        <button class="volume-option" type="button" data-filter="season">Сезонные</button>
+        <button class="volume-option" type="button" data-filter="niche">Нишевые</button>
+        <button class="volume-option" type="button" data-filter="hits">Хиты</button>
+    </div>
+
+    <!-- Сетка каталога -->
+    <div class="recommendation-grid" id="catalogGrid">
+        <!-- Товар 1: L'Automne Dore -->
+        <div class="catalog-card-wrap" data-category="unisex season niche hits" data-price="9400"
+             data-name="L’Automne Doré Золотая осень амбра">
+            <a href="product/autumn-dore.html" class="recommendation-card h-100">
+                <div class="recommendation-img-wrap">
+                    <img src="assets/ambre-no.png" alt="L’Automne Doré">
+                </div>
+                <h3>L’Automne Doré</h3>
+                <p>Амбровый · согревающий</p>
+                <strong>9 400 ₽</strong>
+            </a>
+        </div>
+
+        <!-- Товар 2: Зеленая гармония (Éclat Verte) -->
+        <div class="catalog-card-wrap" data-category="unisex for-her season" data-price="8000"
+             data-name="Éclat Verte Зелёная гармония">
+            <a href="product.html" class="recommendation-card h-100">
+                <div class="recommendation-img-wrap">
+                    <img src="assets/eclat-verte-no.png" alt="Éclat Verte">
+                </div>
+                <h3>Éclat Verte</h3>
+                <p>Зелёный · свежий</p>
+                <strong>8 000 ₽</strong>
+            </a>
+        </div>
+
+        <!-- Товар 3: Velvet Noir -->
+        <div class="catalog-card-wrap" data-category="for-him niche hits" data-price="14200" data-name="Velvet Noir">
+            <a href="product.html" class="recommendation-card h-100">
+                <div class="recommendation-img-wrap">
+                    <img src="assets/velvet-no.png" alt="Velvet Noir">
+                </div>
+                <h3>Velvet Noir</h3>
+                <p>Древесный · пряный</p>
+                <strong>14 200 ₽</strong>
+            </a>
+        </div>
+
+        <!-- Товар 4: Rose de Damas -->
+        <div class="catalog-card-wrap" data-category="for-her niche hits" data-price="13400"
+             data-name="Rose de Damas роза">
+            <a href="product.html" class="recommendation-card h-100">
+                <div class="recommendation-img-wrap">
+                    <img src="assets/roses_parf-no.png" alt="Rose de Damas">
+                </div>
+                <h3>Rose de Damas</h3>
+                <p>Роза · бархатный</p>
+                <strong>13 400 ₽</strong>
+            </a>
+        </div>
+
+        <!-- Товар 5: Solar Ambience -->
+        <div class="catalog-card-wrap" data-category="unisex season" data-price="5500" data-name="Solar Ambience">
+            <a href="product.html" class="recommendation-card h-100">
+                <div class="recommendation-img-wrap">
+                    <img src="assets/solar-no.png" alt="Solar Ambience">
+                </div>
+                <h3>Solar Ambience</h3>
+                <p>Древесный · тёплый</p>
+                <strong>5 500 ₽</strong>
+            </a>
+        </div>
+
+        <!-- Товар 6: Thé Blanc -->
+        <div class="catalog-card-wrap" data-category="unisex for-her" data-price="7800"
+             data-name="Thé Blanc чай свежесть">
+            <a href="product.html" class="recommendation-card h-100">
+                <div class="recommendation-img-wrap">
+                    <img src="assets/tea-no.png" alt="Thé Blanc">
+                </div>
+                <h3>Thé Blanc</h3>
+                <p>Белый чай · деликатный</p>
+                <strong>7 800 ₽</strong>
+            </a>
+        </div>
+
+        <!-- Товар 7: Brise Marine -->
+        <div class="catalog-card-wrap" data-category="unisex for-him season" data-price="8900"
+             data-name="Brise Marine океан морской">
+            <a href="product.html" class="recommendation-card h-100">
+                <div class="recommendation-img-wrap">
+                    <img src="assets/ocean-no.png" alt="Brise Marine">
+                </div>
+                <h3>Brise Marine</h3>
+                <p>Морской бриз · соль</p>
+                <strong>8 900 ₽</strong>
+            </a>
+        </div>
+
+        <!-- Товар 8: Fleur Céleste -->
+        <div class="catalog-card-wrap" data-category="for-her niche" data-price="10500"
+             data-name="Fleur Céleste цветочный">
+            <a href="product.html" class="recommendation-card h-100">
+                <div class="recommendation-img-wrap">
+                    <img src="assets/flora-no.png" alt="Fleur Céleste">
+                </div>
+                <h3>Fleur Céleste</h3>
+                <p>Цветочный · пудровый</p>
+                <strong>10 500 ₽</strong>
+            </a>
+        </div>
+
+        <!-- Товар 9: Soleil d’Or -->
+        <div class="catalog-card-wrap" data-category="unisex hits" data-price="11200"
+             data-name="Soleil d’Or солнце цитрус">
+            <a href="product.html" class="recommendation-card h-100">
+                <div class="recommendation-img-wrap">
+                    <img src="assets/sun_parf-no.png" alt="Soleil d’Or">
+                </div>
+                <h3>Soleil d’Or</h3>
+                <p>Цитрусовый · солнечный</p>
+                <strong>11 200 ₽</strong>
+            </a>
+        </div>
+
+        <!-- Товар 10: Rouge Solaire -->
+        <div class="catalog-card-wrap" data-category="unisex niche hits" data-price="15000"
+             data-name="Rouge Solaire вишня пряности">
+            <a href="product.html" class="recommendation-card h-100">
+                <div class="recommendation-img-wrap">
+                    <img src="assets/blood-no.png" alt="Rouge Solaire">
+                </div>
+                <h3>Rouge Solaire</h3>
+                <p>Пряная вишня · шафран</p>
+                <strong>15 000 ₽</strong>
+            </a>
+        </div>
+
+        <!-- Товар 11: Bleu Minéral -->
+        <div class="catalog-card-wrap" data-category="for-him niche" data-price="12300"
+             data-name="Bleu Minéral синий кедр">
+            <a href="product.html" class="recommendation-card h-100">
+                <div class="recommendation-img-wrap">
+                    <img src="assets/blue-no.png" alt="Bleu Minéral">
+                </div>
+                <h3>Bleu Minéral</h3>
+                <p>Минералы · атласский кедр</p>
+                <strong>12 300 ₽</strong>
+            </a>
+        </div>
+
+        <!-- Товар 12: Nuit Profonde -->
+        <div class="catalog-card-wrap" data-category="for-him niche hits" data-price="16800"
+             data-name="Nuit Profonde ладан смолы">
+            <a href="product.html" class="recommendation-card h-100">
+                <div class="recommendation-img-wrap">
+                    <img src="assets/notch-no.png" alt="Nuit Profonde">
+                </div>
+                <h3>Nuit Profonde</h3>
+                <p>Ладан · дымные смолы</p>
+                <strong>16 800 ₽</strong>
+            </a>
+        </div>
+    </div>
+
+    <!-- Заглушка, если ничего не найдено -->
+    <div id="noResults" class="text-center py-5 d-none">
+        <h3 style="font-family: Georgia, serif; color: var(--ink);">Ничего не найдено</h3>
+        <p class="text-muted small">Попробуйте изменить поисковый запрос или выбрать другую категорию фильтрации.</p>
+        <button class="product-btn secondary" type="button" id="resetFilters">Сбросить фильтры</button>
+    </div>
+</main>
+
+<footer>
+    <div class="container">
+        <div class="row g-4">
+            <div class="col-md-3">
+                <h5>ODORIS</h5>
+                <p>Галерея селективной и авторской парфюмерии.</p>
+                <p class="small text-white-50">8 800 888 88 88</p>
+            </div>
+            <div class="col-md-3">
+                <h5>О нас</h5>
+                <p><a href="#">Концепция дома</a></p>
+                <p><a href="#">Парфюмеры</a></p>
+                <p><a href="#">Бутики</a></p>
+            </div>
+            <div class="col-md-3">
+                <h5>Клиентам</h5>
+                <p><a href="profile.html">Личный кабинет</a></p>
+                <p><a href="favorite.html">Избранное</a></p>
+                <p><a href="corzina.html">Корзина</a></p>
+            </div>
+            <div class="col-md-3">
+                <h5>Контакты</h5>
+                <p>Москва, Столешников пер., 7</p>
+                <p>Ежедневно с 10:00 до 22:00</p>
+                <p>concierge@odoris.ru</p>
+            </div>
+        </div>
+    </div>
+</footer>
+
+
+</body>
+</html>

@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Сезонные ароматы — ODORIS</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="season.css">
+</head>
+<body class="d-flex flex-column min-vh-100 season-page">
+
+<!-- Единая шапка ODORIS -->
+<header class="site-header">
+    <!-- Верхний ярус: Логотип, Поиск, Город, Кнопки действий -->
+    <div class="header-top">
+        <div class="header-container">
+            <a class="header-logo" href="main.html">
+                <img src="assets/logo.png" alt="ODORIS">
+            </a>
+
+            <form class="search-box" action="collection.html" method="get" role="search">
+                <img class="search-inline-icon" src="assets/search.png" alt="" aria-hidden="true">
+                <input type="search" name="q" placeholder="Бренд, аромат или нота" aria-label="Поиск по каталогу"
+                       autocomplete="off">
+                <button class="search-button" type="submit">Найти</button>
+            </form>
+
+            <a href="#" class="delivery-link" title="Выбор города">
+                <img src="assets/geo.png" alt="" aria-hidden="true">
+                <span>Москва</span>
+            </a>
+
+            <div class="header-actions">
+                <a href="favorite.html" class="header-action" title="Избранное">
+                    <img src="assets/favorite.png" alt="Избранное">
+                    <span class="counter-badge">3</span>
+                </a>
+                <a href="corzina.html" class="header-action" title="Корзина">
+                    <img src="assets/corz.png" alt="Корзина">
+                    <span class="counter-badge">2</span>
+                </a>
+                <a href="profile.html" class="header-action" title="Личный кабинет">
+                    <img src="assets/profile.png" alt="Профиль">
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Нижний ярус: Навигация каталога -->
+    <nav class="header-bottom">
+        <div class="header-container">
+            <ul class="nav-links">
+                <li class="nav-item has-dropdown">
+                    <a class="nav-link" href="collection.html">Каталог ▾</a>
+                    <div class="catalog-dropdown">
+                        <div class="catalog-column">
+                            <h5>Для кого</h5>
+                            <a href="lw.html">Для неё</a>
+                            <a href="lm.html">Для него</a>
+                            <a href="ly.html">Унисекс</a>
+                        </div>
+                        <div class="catalog-column">
+                            <h5>Коллекции</h5>
+                            <a href="nis.html">Нишевая парфюмерия</a>
+                            <a href="season.html">Сезонные ароматы</a>
+                            <a href="hit.html">Хиты продаж</a>
+                        </div>
+                        <div class="catalog-column">
+                            <h5>Подбор аромата</h5>
+                            <p>Найди аромат под настроение и характер.</p>
+                            <a href="collection.html" class="catalog-more">Вся коллекция →</a>
+                        </div>
+                    </div>
+                </li>
+                <li class="nav-item"><a class="nav-link" href="collection.html">Бренды</a></li>
+                <li class="nav-item"><a class="nav-link" href="season.html">Сезонные</a></li>
+                <li class="nav-item"><a class="nav-link" href="hit.html">Хиты</a></li>
+                <li class="nav-item"><a class="nav-link" href="nis.html">Нишевая</a></li>
+                <li class="nav-item"><a class="nav-link" href="#">О нас</a></li>
+                <li class="nav-item"><a class="nav-link" href="#">Доставка и оплата</a></li>
+            </ul>
+        </div>
+    </nav>
+</header>
+
+<main class="flex-grow-1 season-main">
+    <section class="season-hero">
+        <div class="season-hero-copy">
+            <p class="season-kicker">ODORIS · КОЛЛЕКЦИЯ ПО СЕЗОНУ</p>
+            <h1>Сезонные<br><em>ароматы</em></h1>
+            <p class="season-intro">Настроение каждого времени года — в нотах, которые хочется носить именно сейчас.</p>
+            <a class="season-primary-link" href="#season-picks">Открыть подборку <span aria-hidden="true">↘</span></a>
+        </div>
+        <div class="season-hero-art" aria-label="Иллюстрация флакона парфюма">
+            <div class="hero-orbit orbit-one"></div>
+            <div class="hero-orbit orbit-two"></div>
+            <div class="hero-leaf leaf-one"></div>
+            <div class="hero-leaf leaf-two"></div>
+            <div class="hero-bottle-wrap">
+                <img class="hero-bottle-img" src="assets/ambre-no.png" alt="Осенний аромат сезона">
+            </div>
+            <p class="hero-art-note">SCENT OF THE SEASON<br><span>Найди своё время года</span></p>
+        </div>
+    </section>
+
+    <section class="season-intro-row" aria-label="О коллекции">
+        <p class="season-section-label">ПОДБОР ПО СЕЗОНУ</p>
+        <div>
+            <h2>Четыре сезона.<br>Бесконечно много ощущений.</h2>
+            <p>Лёгкие цитрусы для солнечных дней, звонкая весенняя свежесть, согревающие древесно-амбровые аккорды осени
+                и плотные шлейфы для зимы.</p>
+        </div>
+    </section>
+
+    <!-- Сетка сезонов: Зелёная гармония перенесена на Весну -->
+    <section class="season-grid" id="season-picks">
+
+        <!-- ВЕСНА: Зелёная гармония -->
+        <a class="season-tile tile-spring" href="product/green-garmony.html" aria-label="Весна — Зелёная гармония">
+            <div class="tile-topline"><span>01 / ВЕСНА</span><span>↗</span></div>
+            <div class="tile-visual spring-visual">
+                <div class="tile-bottle-wrap">
+                    <img class="tile-bottle-img" src="assets/eclat-verte-no.png" alt="Зелёная гармония">
+                </div>
+                <span class="petal petal-a"></span>
+                <span class="petal petal-b"></span>
+            </div>
+            <div class="tile-copy">
+                <p>МАРТ — МАЙ</p>
+                <h3>Зелёная гармония</h3>
+                <span>Свежесть зелени · бергамот · жасмин</span>
+            </div>
+        </a>
+
+        <!-- ЛЕТО -->
+        <a class="season-tile tile-summer" href="collection.html?q=лето" aria-label="Лето — морская свежесть">
+            <div class="tile-topline"><span>02 / ЛЕТО</span><span>↗</span></div>
+            <div class="tile-visual summer-visual">
+                <div class="tile-bottle-wrap">
+                    <img class="tile-bottle-img" src="assets/ocean-no.png" alt="Летний аромат">
+                </div>
+                <span class="sun-disc"></span>
+            </div>
+            <div class="tile-copy">
+                <p>ИЮНЬ — АВГУСТ</p>
+                <h3>Oceanic Drift</h3>
+                <span>Морской бриз · цитрусы · соль</span>
+            </div>
+        </a>
+
+        <!-- ОСЕНЬ -->
+        <a class="season-tile tile-autumn" href="collection.html?q=осень" aria-label="Осень — глубина и бархат">
+            <div class="tile-topline"><span>03 / ОСЕНЬ</span><span>↗</span></div>
+            <div class="tile-visual autumn-visual">
+                <div class="tile-bottle-wrap">
+                    <img class="tile-bottle-img" src="assets/velvet-no.png" alt="Осенний аромат">
+                </div>
+                <span class="autumn-leaf leaf-a"></span>
+                <span class="autumn-leaf leaf-b"></span>
+            </div>
+            <div class="tile-copy">
+                <p>СЕНТЯБРЬ — НОЯБРЬ</p>
+                <h3>Velvet Noir</h3>
+                <span>Тёплый сандал · специи · табак</span>
+            </div>
+        </a>
+
+        <!-- ЗИМА -->
+        <a class="season-tile tile-winter" href="collection.html?q=зима" aria-label="Зима — тепло и смолы">
+            <div class="tile-topline"><span>04 / ЗИМА</span><span>↗</span></div>
+            <div class="tile-visual winter-visual">
+                <div class="tile-bottle-wrap">
+                    <img class="tile-bottle-img" src="assets/notch-no.png" alt="Зимний аромат">
+                </div>
+                <span class="winter-star star-a">✳</span>
+                <span class="winter-star star-b">✦</span>
+            </div>
+            <div class="tile-copy">
+                <p>ДЕКАБРЬ — ФЕВРАЛЬ</p>
+                <h3>Nocturne</h3>
+                <span>Ваниль · ладан · смола · мускус</span>
+            </div>
+        </a>
+    </section>
+
+    <!-- ВЫБОР СЕЗОНА: Осенняя композиция L’Automne Doré -->
+    <section class="season-feature">
+        <div class="feature-art">
+            <div class="feature-glow"></div>
+            <div class="feature-bottle-wrap">
+                <img class="feature-bottle-img" src="assets/ambre-no.png" alt="L’Automne Doré">
+            </div>
+            <div class="feature-branch branch-one"></div>
+            <div class="feature-branch branch-two"></div>
+        </div>
+        <div class="feature-copy">
+            <p class="season-kicker">ВЫБОР СЕЗОНА · ОСЕНЬ В ODORIS</p>
+            <h2>L’Automne Doré</h2>
+            <p>Обволакивающий, согревающий и благородный. Золотистая амбра, кашемировое дерево и деликатная нота пряной
+                корицы создают ощущение тепла и уюта в прохладные осенние дни.</p>
+            <div class="feature-tags">
+                <span>Тёплая амбра</span>
+                <span>Кашемир и дерево</span>
+                <span>Осенний шлейф</span>
+            </div>
+            <a href="product/autumn-dore.html" class="season-primary-link">Подробнее об аромате <span
+                    aria-hidden="true">→</span></a>
+        </div>
+    </section>
+
+    <section class="season-bottom-cta">
+        <p class="season-kicker">ТВОЙ АРОМАТ. ТВОЁ ВРЕМЯ.</p>
+        <h2>Пусть сезон запомнится ароматом.</h2>
+        <p>Исследуй коллекцию и найди композицию, которая подходит именно тебе.</p>
+        <a class="season-primary-link" href="collection.html">Смотреть всю коллекцию <span
+                aria-hidden="true">→</span></a>
+    </section>
+</main>
+
+<footer>
+    <div class="container">
+        <div class="row g-4">
+            <div class="col-md-3">
+                <h5>ODORIS</h5>
+                <p>Галерея селективной и авторской парфюмерии.</p>
+                <p class="small text-white-50">8 800 888 88 88</p>
+            </div>
+            <div class="col-md-3">
+                <h5>О нас</h5>
+                <p><a href="#">Концепция дома</a></p>
+                <p><a href="#">Парфюмеры</a></p>
+                <p><a href="#">Бутики</a></p>
+            </div>
+            <div class="col-md-3">
+                <h5>Клиентам</h5>
+                <p><a href="profile.html">Личный кабинет</a></p>
+                <p><a href="favorite.html">Избранное</a></p>
+                <p><a href="corzina.html">Корзина</a></p>
+            </div>
+            <div class="col-md-3">
+                <h5>Контакты</h5>
+                <p>Барнаул, пр. Ленина, 46</p>
+                <p>Ежедневно с 8:00 до 22:00</p>
+                <p>odoris.support@gmail.com</p>
+            </div>
+        </div>
+    </div>
+</footer>
+
+</body>
+</html>

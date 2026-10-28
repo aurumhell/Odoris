@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>ODORIS — Авторская и селективная парфюмерия</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="main.css">
+</head>
+<body class="d-flex flex-column min-vh-100">
+
+<!-- Единая шапка ODORIS -->
+<!-- Единая шапка ODORIS -->
+<header class="site-header">
+    <!-- Верхний ярус: Логотип, Поиск, Город, Кнопки действий -->
+    <div class="header-top">
+        <div class="header-container">
+            <a class="header-logo" href="main.html">
+                <img src="assets/logo.png" alt="ODORIS">
+            </a>
+
+            <form class="search-box" action="collection.html" method="get" role="search">
+                <img class="search-inline-icon" src="assets/search.png" alt="" aria-hidden="true">
+                <input type="search" name="q" placeholder="Бренд, аромат или нота" aria-label="Поиск по каталогу"
+                       autocomplete="off">
+                <button class="search-button" type="submit">Найти</button>
+            </form>
+
+            <a href="#" class="delivery-link" title="Выбор города">
+                <img src="assets/geo.png" alt="" aria-hidden="true">
+                <span>Москва</span>
+            </a>
+
+            <div class="header-actions">
+                <a href="favorite.html" class="header-action" title="Избранное">
+                    <img src="assets/favorite.png" alt="Избранное">
+                    <span class="counter-badge">3</span>
+                </a>
+                <a href="corzina.html" class="header-action" title="Корзина">
+                    <img src="assets/corz.png" alt="Корзина">
+                    <span class="counter-badge">2</span>
+                </a>
+                <a href="profile.html" class="header-action" title="Личный кабинет">
+                    <img src="assets/profile.png" alt="Профиль">
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Нижний ярус: Навигация каталога -->
+    <nav class="header-bottom">
+        <div class="header-container">
+            <ul class="nav-links">
+                <li class="nav-item has-dropdown">
+                    <a class="nav-link" href="collection.html">Каталог ▾</a>
+                    <div class="catalog-dropdown">
+                        <div class="catalog-column">
+                            <h5>Для кого</h5>
+                            <a href="lw.html">Для неё</a>
+                            <a href="lm.html">Для него</a>
+                            <a href="ly.html">Унисекс</a>
+                        </div>
+                        <div class="catalog-column">
+                            <h5>Коллекции</h5>
+                            <a href="nis.html">Нишевая парфюмерия</a>
+                            <a href="season.html">Сезонные ароматы</a>
+                            <a href="hit.html">Хиты продаж</a>
+                        </div>
+                        <div class="catalog-column">
+                            <h5>Подбор аромата</h5>
+                            <p>Найди аромат под настроение и характер.</p>
+                            <a href="collection.html" class="catalog-more">Вся коллекция →</a>
+                        </div>
+                    </div>
+                </li>
+                <li class="nav-item"><a class="nav-link" href="brands.html">Бренды</a></li>
+                <li class="nav-item"><a class="nav-link" href="season.html">Сезонные</a></li>
+                <li class="nav-item"><a class="nav-link" href="hit.html">Хиты</a></li>
+                <li class="nav-item"><a class="nav-link" href="nis.html">Нишевая</a></li>
+                <li class="nav-item"><a class="nav-link" href="about.html">О нас</a></li>
+                <li class="nav-item"><a class="nav-link" href="#">Доставка и оплата</a></li>
+            </ul>
+        </div>
+    </nav>
+</header>
+
+<main class="flex-grow-1">
+    <div class="container">
+        <div class="row">
+
+            <!-- Главный баннер -->
+            <div class="col-12 py-2">
+                <div class="card my-3 banner-card">
+                    <div class="card-body banner-content">
+                        <h1>Ароматы, которые вдохновляют</h1>
+                        <p>Открой для себя аромат, который подчеркнёт твою индивидуальность.</p>
+                        <a href="collection.html" class="btn btn-primary">Смотреть ароматы</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Плитки категорий -->
+            <div class="card my-3">
+                <div class="card-body">
+                    <div class="row text-center">
+                        <a href="collection.html" class="col border">Найти свой аромат</a>
+                        <a href="lw.html" class="col border">Для неё</a>
+                        <a href="lm.html" class="col border">Для него</a>
+                        <a href="ly.html" class="col border">Унисекс</a>
+                        <a href="season.html" class="col border">Сезонные</a>
+                        <a href="nis.html" class="col border">Нишевые</a>
+                        <a href="hit.html" class="col border">Хиты</a>
+                        <a href="collection.html" class="col border">Вся коллекция</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Акцентный баннер -->
+            <div class="alert alert-danger text-center my-3">
+                <h2>У НАС ЕСТЬ СЕКРЕТ</h2>
+                <p>Некоторые ароматы невозможно понять с первого вдоха. Они раскрываются только тем, кто умеет
+                    ждать.</p>
+                <a href="collection.html" class="btn btn-light">Узнать подробнее</a>
+            </div>
+
+
+            <div class="promo-banners">
+
+                <a href="quiz.html" class="promo-banner promo-banner--quiz">
+                    <img src="assets/quiz.png" alt="" class="promo-banner__image">
+                    <div class="promo-banner__content">
+                        <h2>Узнать, какой ты аромат</h2>
+                        <p>Пройди тест и открой свой идеальный аромат</p>
+                        <span class="promo-banner__link">Пройти тест <span>→</span></span>
+                    </div>
+                </a>
+
+                <a href="hit.html" class="promo-banner promo-banner--hits">
+                    <img src="assets/aromavib.png" alt="" class="promo-banner__image">
+                    <div class="promo-banner__content">
+                        <h2>Ароматы, которые выбирают чаще</h2>
+                        <p>Узнай, какие парфюмы популярны в этом сезоне</p>
+                        <span class="promo-banner__link">Смотреть топ <span>→</span></span>
+                    </div>
+                </a>
+
+                <a href="nis.html" class="promo-banner promo-banner--personal">
+                    <img src="assets/vam-mozhet-ponravitsya.png" alt="" class="promo-banner__image">
+                    <div class="promo-banner__content">
+                        <h2>Вам может понравиться, если...</h2>
+                        <p>Любимые фильмы, музыка, книги и многое другое</p>
+                        <span class="promo-banner__link">Пройти подбор <span>→</span></span>
+                    </div>
+                </a>
+
+            </div>
+
+
+            <!-- Хиты с новыми флаконами духов из assets -->
+            <div class="card my-3">
+                <div class="card-body">
+                    <h2 class="text-center mb-4">Хиты продаж</h2>
+                    <div class="row g-3">
+                        <div class="col-md-2 col-6">
+                            <a href="product/green-garmony.html" class="hit-card">
+                                <div class="hit-img-wrap">
+                                    <img src="assets/flora.png" alt="Flora Mystique">
+                                </div>
+                                <p class="hit-name">Flora Mystique</p>
+                                <p class="hit-desc">Цветочный · пудровый</p>
+                                <p class="hit-price">9 500 ₽</p>
+                            </a>
+                        </div>
+                        <div class="col-md-2 col-6">
+                            <a href="product/green-garmony.html" class="hit-card">
+                                <div class="hit-img-wrap">
+                                    <img src="assets/ambre.png" alt="Ambre Impérial">
+                                </div>
+                                <p class="hit-name">Ambre Impérial</p>
+                                <p class="hit-desc">Амбровый · тёплый</p>
+                                <p class="hit-price">11 800 ₽</p>
+                            </a>
+                        </div>
+                        <div class="col-md-2 col-6">
+                            <a href="product/green-garmony.html" class="hit-card">
+                                <div class="hit-img-wrap">
+                                    <img src="assets/ocean.png" alt="Oceanic Drift">
+                                </div>
+                                <p class="hit-name">Oceanic Drift</p>
+                                <p class="hit-desc">Морской · акватический</p>
+                                <p class="hit-price">8 900 ₽</p>
+                            </a>
+                        </div>
+                        <div class="col-md-2 col-6">
+                            <a href="product/green-garmony.html" class="hit-card">
+                                <div class="hit-img-wrap">
+                                    <img src="assets/roses_parf.png" alt="Rose de Damas">
+                                </div>
+                                <p class="hit-name">Rose de Damas</p>
+                                <p class="hit-desc">Роза · бархатный</p>
+                                <p class="hit-price">13 400 ₽</p>
+                            </a>
+                        </div>
+                        <div class="col-md-2 col-6">
+                            <a href="product/green-garmony.html" class="hit-card">
+                                <div class="hit-img-wrap">
+                                    <img src="assets/velvet.png" alt="Velvet Noir">
+                                </div>
+                                <p class="hit-name">Velvet Noir</p>
+                                <p class="hit-desc">Древесный · пряный</p>
+                                <p class="hit-price">14 200 ₽</p>
+                            </a>
+                        </div>
+                        <div class="col-md-2 col-6">
+                            <a href="product/green-garmony.html" class="hit-card">
+                                <div class="hit-img-wrap">
+                                    <img src="assets/tea.png" alt="Thé Blanc">
+                                </div>
+                                <p class="hit-name">Thé Blanc</p>
+                                <p class="hit-desc">Белый чай · бергамот</p>
+                                <p class="hit-price">7 600 ₽</p>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</main>
+
+
+<footer>
+    <div class="container">
+        <div class="row g-4">
+            <div class="col-md-3">
+                <h5>ODORIS</h5>
+                <p>Галерея селективной и авторской парфюмерии.</p>
+                <p class="small text-white-50">8 800 888 88 88</p>
+            </div>
+            <div class="col-md-3">
+                <h5>О нас</h5>
+                <p><a href="#">Концепция дома</a></p>
+                <p><a href="#">Парфюмеры</a></p>
+                <p><a href="#">Бутики</a></p>
+            </div>
+            <div class="col-md-3">
+                <h5>Клиентам</h5>
+                <p><a href="profile.html">Личный кабинет</a></p>
+                <p><a href="favorite.html">Избранное</a></p>
+                <p><a href="corzina.html">Корзина</a></p>
+            </div>
+            <div class="col-md-3">
+                <h5>Контакты</h5>
+                <p>Барнаул, пр. Ленина, 46</p>
+                <p>Ежедневно с 8:00 до 22:00</p>
+                <p>odoris.support@gmail.com</p>
+            </div>
+        </div>
+    </div>
+</footer>
+
+</body>
+</html>

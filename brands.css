@@ -1,0 +1,381 @@
+/* ODORIS — Brands directory, CSS only */
+.brands-main {
+    padding-top: 108px;
+    background: #fffdfa;
+    color: #30272a
+}
+
+.brands-hero {
+    min-height: 390px;
+    padding: 60px max(6vw, calc((100vw - 1240px) / 2));
+    display: grid;
+    grid-template-columns:1.1fr .9fr;
+    align-items: center;
+    gap: 45px;
+    background: linear-gradient(115deg, #fbf8f4, #f1e4df)
+}
+
+.eyebrow {
+    font-size: 10px;
+    letter-spacing: .22em;
+    font-weight: 700;
+    color: #8f2e40;
+    margin: 0 0 20px
+}
+
+.brands-hero h1 {
+    font-family: Georgia, 'Times New Roman', serif;
+    font-size: clamp(42px, 5vw, 66px);
+    line-height: 1.08;
+    letter-spacing: -.04em;
+    font-weight: 400;
+    margin: 0 0 22px
+}
+
+.brands-hero h1 em {
+    color: #8f2e40;
+    font-weight: 400
+}
+
+.brands-hero-copy > p:last-child {
+    max-width: 560px;
+    color: #786a6c;
+    font-size: 15px;
+    line-height: 1.9;
+    margin: 0
+}
+
+.brands-hero-art {
+    height: 270px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center
+}
+
+.brand-orbit {
+    position: absolute;
+    border: 1px solid rgba(143, 46, 64, .2);
+    border-radius: 50%;
+    width: 310px;
+    height: 200px;
+    transform: rotate(-24deg)
+}
+
+.orbit-b {
+    width: 240px;
+    height: 280px;
+    transform: rotate(25deg)
+}
+
+.brand-vial {
+    position: absolute;
+    bottom: 35px;
+    width: 70px;
+    height: 145px;
+    border: 1px solid rgba(255, 255, 255, .8);
+    border-radius: 13px 13px 9px 9px;
+    box-shadow: inset 7px 0 8px #ffffff9c, 0 18px 22px #48272a20
+}
+
+.brand-vial:before {
+    content: "";
+    position: absolute;
+    left: 20px;
+    top: -27px;
+    width: 28px;
+    height: 30px;
+    border-radius: 4px 4px 2px 2px;
+    background: linear-gradient(90deg, #8b4b38, #f2d8ad, #6b2931)
+}
+
+.vial-one {
+    left: 24%;
+    height: 125px;
+    background: linear-gradient(100deg, #d9b17a, #fff0d0 40%, #9d542d)
+}
+
+.vial-two {
+    left: calc(50% - 35px);
+    height: 175px;
+    width: 83px;
+    background: linear-gradient(100deg, #eee6da, #ffffff 35%, #b8a8a3 70%, #eee1d2)
+}
+
+.vial-two:before {
+    left: 24px;
+    background: linear-gradient(90deg, #30272a, #c6b6a0, #30272a)
+}
+
+.vial-three {
+    right: 22%;
+    height: 145px;
+    background: linear-gradient(100deg, #591d2a, #b54b5c 40%, #f3d6ca)
+}
+
+.art-caption {
+    position: absolute;
+    bottom: 3px;
+    font-size: 8px;
+    letter-spacing: .25em;
+    color: #9b8583
+}
+
+.brands-directory {
+    max-width: 1220px;
+    margin: 0 auto;
+    padding: 76px 24px 100px
+}
+
+.directory-heading {
+    display: grid;
+    grid-template-columns:1fr minmax(280px, 390px);
+    gap: 45px;
+    align-items: end
+}
+
+.directory-heading h2 {
+    font: 400 clamp(34px, 4vw, 48px)/1.15 Georgia, serif;
+    margin: 0 0 12px;
+    letter-spacing: -.03em
+}
+
+.directory-subtitle {
+    color: #786a6c;
+    font-size: 13px;
+    line-height: 1.7;
+    margin: 0;
+    max-width: 560px
+}
+
+.brand-search label {
+    display: block;
+    font-size: 12px;
+    font-weight: 700;
+    margin-bottom: 9px
+}
+
+.brand-search-field {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    height: 49px;
+    padding: 0 12px;
+    border: 1px solid #d9c7c8;
+    background: #fff
+}
+
+.brand-search-field > span {
+    font-size: 24px;
+    color: #8f2e40
+}
+
+.brand-search-field input {
+    border: 0;
+    outline: 0;
+    min-width: 0;
+    flex: 1;
+    font: 13px Arial, sans-serif;
+    color: #30272a;
+    background: transparent
+}
+
+.brand-search-field button {
+    border: 0;
+    background: #8f2e40;
+    color: #fff;
+    width: 31px;
+    height: 31px;
+    font-size: 19px;
+    cursor: pointer
+}
+
+.brand-search small {
+    display: block;
+    color: #938486;
+    font-size: 10px;
+    line-height: 1.5;
+    margin-top: 8px
+}
+
+.alphabet {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 7px;
+    margin: 40px 0 45px;
+    padding: 20px 0;
+    border-top: 1px solid #e5d8d5;
+    border-bottom: 1px solid #e5d8d5
+}
+
+.alphabet a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 34px;
+    height: 34px;
+    font: 14px Georgia, serif;
+    color: #6c5659;
+    border: 1px solid transparent;
+    transition: all .2s
+}
+
+.alphabet a:hover, .alphabet a:focus {
+    color: #8f2e40;
+    border-color: #8f2e40;
+    background: #fbf4f2
+}
+
+.brand-groups {
+    display: grid;
+    grid-template-columns:repeat(3, minmax(0, 1fr));
+    column-gap: 36px;
+    row-gap: 35px
+}
+
+.brand-group {
+    scroll-margin-top: 130px;
+    border-top: 1px solid #e5d8d5;
+    padding-top: 15px
+}
+
+.brand-group h3 {
+    font: italic 32px Georgia, serif;
+    color: #8f2e40;
+    margin: 0 0 12px
+}
+
+.brand-list {
+    display: flex;
+    flex-direction: column
+}
+
+.brand-list a {
+    display: flex;
+    justify-content: space-between;
+    gap: 12px;
+    align-items: center;
+    padding: 9px 0;
+    color: #44383a;
+    font-size: 13px;
+    border-bottom: 1px solid #f0e9e6;
+    transition: color .2s, padding .2s
+}
+
+.brand-list a span {
+    font-size: 14px;
+    color: #b49a98;
+    opacity: 0;
+    transition: opacity .2s
+}
+
+.brand-list a:hover {
+    color: #8f2e40;
+    padding-left: 4px
+}
+
+.brand-list a:hover span {
+    opacity: 1
+}
+
+.about-footer {
+    padding: 42px 24px 28px;
+    text-align: center;
+    background: #2d2527;
+    color: #f7efeb
+}
+
+.footer-wordmark {
+    font-family: Georgia, serif;
+    font-size: 27px;
+    letter-spacing: .2em
+}
+
+.about-footer p {
+    font-family: Georgia, serif;
+    font-style: italic;
+    color: #c8b5b2;
+    margin: 5px 0 24px
+}
+
+.about-footer nav {
+    display: flex;
+    justify-content: center;
+    gap: 28px;
+    flex-wrap: wrap;
+    margin-bottom: 26px
+}
+
+.about-footer nav a {
+    font-size: 11px;
+    color: #e2d5d2
+}
+
+.about-footer nav a:hover {
+    color: #fff
+}
+
+.about-footer small {
+    font-size: 9px;
+    letter-spacing: .1em;
+    color: #a99795
+}
+
+@media (max-width: 850px) {
+    .brands-hero {
+        grid-template-columns:1fr;
+        gap: 15px;
+        padding-top: 48px
+    }
+
+    .brands-hero-art {
+        height: 220px
+    }
+
+    .directory-heading {
+        grid-template-columns:1fr;
+        gap: 28px
+    }
+
+    .brand-groups {
+        grid-template-columns:repeat(2, minmax(0, 1fr))
+    }
+}
+
+@media (max-width: 540px) {
+    .brands-main {
+        padding-top: 108px
+    }
+
+    .brands-hero {
+        padding-left: 22px;
+        padding-right: 22px
+    }
+
+    .brands-hero h1 {
+        font-size: 43px
+    }
+
+    .brands-directory {
+        padding: 55px 20px 70px
+    }
+
+    .brand-groups {
+        grid-template-columns:1fr;
+        row-gap: 25px
+    }
+
+    .alphabet {
+        gap: 3px;
+        margin: 28px 0 34px
+    }
+
+    .alphabet a {
+        width: 29px;
+        height: 30px
+    }
+
+    .directory-heading h2 {
+        font-size: 36px
+    }
+}

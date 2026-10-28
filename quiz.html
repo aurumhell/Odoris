@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Какой ты аромат? — ODORIS</title>
+    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="quiz.css">
+</head>
+<body>
+<header class="site-header">
+    <div class="header-top">
+        <div class="header-container">
+            <a class="header-logo" href="main.html"><img src="assets/logo.png" alt="ODORIS"></a>
+            <form class="search-box" action="collection.html" method="get" role="search">
+                <img class="search-inline-icon" src="assets/search.png" alt="" aria-hidden="true">
+                <input type="search" name="q" placeholder="Бренд, аромат или нота" aria-label="Поиск по каталогу">
+                <button class="search-button" type="submit">Найти</button>
+            </form>
+            <a href="#" class="delivery-link" title="Выбор города"><img src="assets/geo.png"
+                                                                        alt="Город"><span>Москва ⌄</span></a>
+            <div class="header-actions">
+                <a href="favorite.html" class="header-action" title="Избранное"><img src="assets/favorite.png"
+                                                                                     alt="Избранное"></a>
+                <a href="corzina.html" class="header-action" title="Корзина"><img src="assets/corz.png"
+                                                                                  alt="Корзина"></a>
+                <a href="profile.html" class="header-action" title="Профиль"><img src="assets/profile.png"
+                                                                                  alt="Профиль"></a>
+            </div>
+        </div>
+    </div>
+    <nav class="header-bottom">
+        <div class="header-container">
+            <ul class="nav-links">
+                <li class="nav-item has-dropdown catalog-item"><a class="nav-link" href="collection.html">Каталог ▾</a>
+                    <div class="catalog-dropdown">
+                        <div class="catalog-column"><h5>Для кого</h5><a href="lw.html">Для неё</a><a href="lm.html">Для
+                            него</a><a href="ly.html">Унисекс</a></div>
+                        <div class="catalog-column"><h5>Коллекции</h5><a href="nis.html">Нишевая парфюмерия</a><a
+                                href="season.html">Сезонные ароматы</a><a href="hit.html">Хиты продаж</a></div>
+                        <div class="catalog-column"><h5>Подбор аромата</h5>
+                            <p>Найди аромат под настроение и характер.</p><a href="collection.html"
+                                                                             class="catalog-more">Вся коллекция →</a>
+                        </div>
+                    </div>
+                </li>
+                <li class="nav-item"><a class="nav-link" href="brands.html">Бренды</a></li>
+                <li class="nav-item"><a class="nav-link" href="season.html">Сезонные ароматы</a></li>
+                <li class="nav-item"><a class="nav-link" href="hit.html">Хиты продаж</a></li>
+                <li class="nav-item"><a class="nav-link" href="nis.html">Нишевая парфюмерия</a></li>
+                <li class="nav-item"><a class="nav-link" href="about.html">О нас</a></li>
+                <li class="nav-item"><a class="nav-link active" href="quiz.html">Подбор аромата</a></li>
+            </ul>
+        </div>
+    </nav>
+</header>
+<main class="quiz-main">
+    <section class="quiz-hero">
+        <div class="quiz-hero-copy">
+            <p class="eyebrow">ODORIS · SCENT PERSONALITY</p>
+            <h1>Какой ты<br><em>парфюм?</em></h1>
+            <p>Ответь на несколько вопросов о настроении, привычках и маленьких удовольствиях — и узнай, какой аромат
+                отражает именно тебя.</p>
+            <a class="quiz-start" href="#quiz">Начать тест <span>↓</span></a>
+            <div class="quiz-meta"><span>01 / 05 вопросов</span><span>≈ 2 минуты</span></div>
+        </div>
+        <div class="quiz-hero-art" aria-hidden="true">
+            <div class="halo halo-one"></div>
+            <div class="halo halo-two"></div>
+            <div class="hero-shadow"></div>
+            <div class="hero-perfume">
+                <div class="hero-cap"></div>
+                <div class="hero-neck"></div>
+                <div class="hero-bottle"><span>ODORIS</span><small>YOUR SCENT</small></div>
+            </div>
+            <span class="hero-side-note">FIND YOUR<br>SIGNATURE</span>
+        </div>
+    </section>
+
+    <section class="quiz-section" id="quiz">
+        <div class="quiz-section-heading"><p class="eyebrow">ТВОЯ АРОМАТИЧЕСКАЯ ИСТОРИЯ</p>
+            <h2>Выбирай сердцем.</h2>
+            <p>Здесь нет правильных ответов — только то, что ближе тебе.</p></div>
+        <form id="scent-quiz" class="quiz-form">
+            <div class="quiz-progress"><span id="progress-label">Вопрос 1 из 5</span>
+                <div class="progress-track"><span id="progress-fill"></span></div>
+            </div>
+            <fieldset class="question active" data-question="0">
+                <legend><span>01</span> Как выглядит твой идеальный день?</legend>
+                <label class="answer"><input type="radio" name="q0" value="fresh" required><span
+                        class="answer-icon">☼</span><span><b>Медленное утро у моря</b><small>Свежий воздух, свет и простор.</small></span></label>
+                <label class="answer"><input type="radio" name="q0" value="floral"><span
+                        class="answer-icon">✿</span><span><b>Прогулка по цветущему саду</b><small>Красота в деталях и лёгкость.</small></span></label>
+                <label class="answer"><input type="radio" name="q0" value="woody"><span
+                        class="answer-icon">♧</span><span><b>Уютный книжный магазин</b><small>Тишина, дерево и любимые истории.</small></span></label>
+                <label class="answer"><input type="radio" name="q0" value="amber"><span
+                        class="answer-icon">✧</span><span><b>Вечер при свечах</b><small>Тёплый свет и немного тайны.</small></span></label>
+            </fieldset>
+            <fieldset class="question" data-question="1">
+                <legend><span>02</span> Какое впечатление тебе нравится производить?</legend>
+                <label class="answer"><input type="radio" name="q1" value="fresh" required><span
+                        class="answer-icon">↗</span><span><b>Лёгкое и непринуждённое</b><small>Будто рядом стало больше воздуха.</small></span></label>
+                <label class="answer"><input type="radio" name="q1" value="floral"><span
+                        class="answer-icon">❀</span><span><b>Тонкое и элегантное</b><small>Запоминаюсь мягко, но надолго.</small></span></label>
+                <label class="answer"><input type="radio" name="q1" value="woody"><span
+                        class="answer-icon">⌁</span><span><b>Спокойное и уверенное</b><small>Мне не нужно говорить громко.</small></span></label>
+                <label class="answer"><input type="radio" name="q1" value="amber"><span
+                        class="answer-icon">✦</span><span><b>Загадочное и притягательное</b><small>Во мне всегда есть второй слой.</small></span></label>
+            </fieldset>
+            <fieldset class="question" data-question="2">
+                <legend><span>03</span> Какую палитру ты выберешь?</legend>
+                <label class="answer"><input type="radio" name="q2" value="fresh" required><span
+                        class="swatch swatch-fresh"></span><span><b>Белый, голубой, серебро</b><small>Чистота и ясность.</small></span></label>
+                <label class="answer"><input type="radio" name="q2" value="floral"><span
+                        class="swatch swatch-floral"></span><span><b>Розовый, кремовый, зелёный</b><small>Цветы и мягкий свет.</small></span></label>
+                <label class="answer"><input type="radio" name="q2" value="woody"><span
+                        class="swatch swatch-woody"></span><span><b>Оливковый, коричневый, песочный</b><small>Земля, камень и древесина.</small></span></label>
+                <label class="answer"><input type="radio" name="q2" value="amber"><span
+                        class="swatch swatch-amber"></span><span><b>Бордовый, золото, чёрный</b><small>Глубина и контраст.</small></span></label>
+            </fieldset>
+            <fieldset class="question" data-question="3">
+                <legend><span>04</span> Что ты чаще всего ищешь в парфюме?</legend>
+                <label class="answer"><input type="radio" name="q3" value="fresh" required><span
+                        class="answer-icon">❄</span><span><b>Свежесть и чистоту</b><small>Цитрусы, зелёные ноты, морской воздух.</small></span></label>
+                <label class="answer"><input type="radio" name="q3" value="floral"><span
+                        class="answer-icon">✿</span><span><b>Нежность и сияние</b><small>Пион, роза, белые цветы.</small></span></label>
+                <label class="answer"><input type="radio" name="q3" value="woody"><span
+                        class="answer-icon">♧</span><span><b>Глубину и естественность</b><small>Кедр, ветивер, сухая древесина.</small></span></label>
+                <label class="answer"><input type="radio" name="q3" value="amber"><span
+                        class="answer-icon">✧</span><span><b>Тепло и чувственность</b><small>Амбра, ваниль, пряности.</small></span></label>
+            </fieldset>
+            <fieldset class="question" data-question="4">
+                <legend><span>05</span> Выбери место, куда хочется исчезнуть на выходные.</legend>
+                <label class="answer"><input type="radio" name="q4" value="fresh" required><span
+                        class="answer-icon">⌁</span><span><b>Белая вилла у моря</b><small>Солнце, ветер и бесконечный горизонт.</small></span></label>
+                <label class="answer"><input type="radio" name="q4" value="floral"><span
+                        class="answer-icon">❀</span><span><b>Домик в цветущем Провансе</b><small>Сад, свежие простыни и цветы.</small></span></label>
+                <label class="answer"><input type="radio" name="q4" value="woody"><span
+                        class="answer-icon">♧</span><span><b>Дом в лесу</b><small>Дождь, дерево и тишина.</small></span></label>
+                <label class="answer"><input type="radio" name="q4" value="amber"><span
+                        class="answer-icon">✦</span><span><b>Риад в старом городе</b><small>Специи, тёплый камень и сумерки.</small></span></label>
+            </fieldset>
+            <div class="quiz-controls">
+                <button type="button" class="quiz-back" id="back-btn" disabled>← Назад</button>
+                <span class="step-dots" id="step-dots" aria-label="Прогресс"><i
+                        class="current"></i><i></i><i></i><i></i><i></i></span>
+                <button type="button" class="quiz-next" id="next-btn">Следующий вопрос <span>→</span></button>
+            </div>
+        </form>
+        <section class="quiz-result" id="quiz-result" hidden aria-live="polite">
+            <p class="eyebrow">ТВОЙ АРОМАТИЧЕСКИЙ ПОРТРЕТ</p>
+            <p class="result-kicker">ТЫ —</p>
+            <h2 id="result-title">Свежий бриз</h2>
+            <div class="result-rule"></div>
+            <p id="result-description"></p>
+            <div class="result-notes"><span>ТВОИ НОТЫ</span><b id="result-notes"></b></div>
+            <p class="result-match" id="result-match"></p>
+            <div class="result-actions"><a id="result-link" class="quiz-next" href="collection.html">Найти свой аромат
+                <span>↗</span></a>
+                <button type="button" id="restart-btn" class="quiz-back">Пройти ещё раз ↻</button>
+            </div>
+        </section>
+    </section>
+    <section class="quiz-bottom"><p class="eyebrow">ТВОЙ АРОМАТ — ТВОИ ПРАВИЛА</p>
+        <h2>Не следуй за нотами.<br><em>Следуй за собой.</em></h2><a href="collection.html" class="quiz-start">Исследовать
+            коллекцию <span>↗</span></a></section>
+</main>
+<footer class="about-footer"><a href="main.html" class="footer-wordmark">ODORIS</a>
+    <p>Искусство быть собой.</p>
+    <nav aria-label="Ссылки в подвале"><a href="collection.html">Коллекция</a><a href="brands.html">Бренды</a><a
+            href="about.html">О нас</a></nav>
+    <small>© ODORIS, 2026</small></footer>
+<script src="quiz.js"></script>
+</body>
+</html>
