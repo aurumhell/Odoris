@@ -1,0 +1,72 @@
+<header class="site-header">
+    <!-- Верхний ярус: Логотип, Поиск, Город, Кнопки действий -->
+    <div class="header-top">
+        <div class="header-container">
+            <a class="header-logo" href="index.html">
+                <img src="assets/logo.png" alt="ODORIS">
+            </a>
+
+            <form class="search-box" action="collection.html" method="get" role="search">
+                <img class="search-inline-icon" src="assets/search.png" alt="" aria-hidden="true">
+                <input type="search" name="q" placeholder="Бренд, аромат или нота" aria-label="Поиск по каталогу"
+                       autocomplete="off">
+                <button class="search-button" type="submit">Найти</button>
+            </form>
+
+            <a href="#" class="delivery-link" title="Выбор города">
+                <img src="assets/geo.png" alt="" aria-hidden="true">
+                <span>Москва</span>
+            </a>
+
+            <div class="header-actions">
+                <a href="favorite.html" class="header-action" title="Избранное">
+                    <img src="assets/favorite.png" alt="Избранное">
+                    <span class="counter-badge">3</span>
+                </a>
+                <a href="corzina.html" class="header-action" title="Корзина">
+                    <img src="assets/corz.png" alt="Корзина">
+                    <span class="counter-badge">2</span>
+                </a>
+                <a href="profile.html" class="header-action" title="Личный кабинет">
+                    <img src="assets/profile.png" alt="Профиль">
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Нижний ярус: Навигация каталога -->
+    <nav class="header-bottom">
+        <div class="header-container">
+            <ul class="nav-links">
+                <li class="nav-item has-dropdown">
+                    <a class="nav-link" href="collection.html">Каталог ▾</a>
+                    <div class="catalog-dropdown">
+                        <div class="catalog-column">
+                            <h5>Для кого</h5>
+                            <a href="lw.html">Для неё</a>
+                            <a href="lm.html">Для него</a>
+                            <a href="ly.html">Унисекс</a>
+                        </div>
+                        <div class="catalog-column">
+                            <h5>Коллекции</h5>
+                            <a href="nis.html">Нишевая парфюмерия</a>
+                            <a href="season.html">Сезонные ароматы</a>
+                            <a href="hit.html">Хиты продаж</a>
+                        </div>
+                        <div class="catalog-column">
+                            <h5>Подбор аромата</h5>
+                            <p>Найди аромат под настроение и характер.</p>
+                            <a href="collection.html" class="catalog-more">Вся коллекция →</a>
+                        </div>
+                    </div>
+                </li>
+                <li class="nav-item"><a class="nav-link" href="brands.html">Бренды</a></li>
+                <li class="nav-item"><a class="nav-link" href="season.html">Сезонные</a></li>
+                <li class="nav-item"><a class="nav-link" href="hit.html">Хиты</a></li>
+                <li class="nav-item"><a class="nav-link" href="nis.html">Нишевая</a></li>
+                <li class="nav-item"><a class="nav-link" href="about.html">О нас</a></li>
+                <li class="nav-item"><a class="nav-link" href="#">Доставка и оплата</a></li>
+            </ul>
+        </div>
+    </nav>
+</header>
