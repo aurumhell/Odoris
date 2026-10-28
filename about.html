@@ -2,57 +2,17 @@
 <html lang="ru">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>О нас — ODORIS</title>
-    <link rel="stylesheet" href="main.css">
-    <link rel="stylesheet" href="about.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>ODORIS — Парфюмерия</title>
+
+    <link rel="stylesheet" href="css/index.css">
+
+    <script src="js/components.js" defer></script>
 </head>
+
 <body>
-<header class="site-header">
-    <div class="header-top">
-        <div class="header-container">
-            <a class="header-logo" href="main.html"><img src="assets/logo.png" alt="ODORIS"></a>
-            <form class="search-box" action="collection.html" method="get" role="search">
-                <img class="search-inline-icon" src="assets/search.png" alt="" aria-hidden="true">
-                <input type="search" name="q" placeholder="Бренд, аромат или нота" aria-label="Поиск по каталогу">
-                <button class="search-button" type="submit">Найти</button>
-            </form>
-            <a href="#" class="delivery-link" title="Выбор города"><img src="assets/geo.png"
-                                                                        alt="Город"><span>Москва ⌄</span></a>
-            <div class="header-actions">
-                <a href="favorite.html" class="header-action" title="Избранное"><img src="assets/favorite.png"
-                                                                                     alt="Избранное"></a>
-                <a href="corzina.html" class="header-action" title="Корзина"><img src="assets/corz.png"
-                                                                                  alt="Корзина"></a>
-                <a href="profile.html" class="header-action" title="Профиль"><img src="assets/profile.png"
-                                                                                  alt="Профиль"></a>
-            </div>
-        </div>
-    </div>
-    <nav class="header-bottom">
-        <div class="header-container">
-            <ul class="nav-links">
-                <li class="nav-item has-dropdown catalog-item"><a class="nav-link" href="collection.html">Каталог ▾</a>
-                    <div class="catalog-dropdown">
-                        <div class="catalog-column"><h5>Для кого</h5><a href="lw.html">Для неё</a><a href="lm.html">Для
-                            него</a><a href="ly.html">Унисекс</a></div>
-                        <div class="catalog-column"><h5>Коллекции</h5><a href="nis.html">Нишевая парфюмерия</a><a
-                                href="season.html">Сезонные ароматы</a><a href="hit.html">Хиты продаж</a></div>
-                        <div class="catalog-column"><h5>Подбор аромата</h5>
-                            <p>Найди аромат под настроение и характер.</p><a href="collection.html"
-                                                                             class="catalog-more">Вся коллекция →</a>
-                        </div>
-                    </div>
-                </li>
-                <li class="nav-item"><a class="nav-link" href="collection.html">Бренды</a></li>
-                <li class="nav-item"><a class="nav-link" href="season.html">Сезонные ароматы</a></li>
-                <li class="nav-item"><a class="nav-link" href="hit.html">Хиты продаж</a></li>
-                <li class="nav-item"><a class="nav-link" href="nis.html">Нишевая парфюмерия</a></li>
-                <li class="nav-item"><a class="nav-link active" href="about.html">О нас</a></li>
-            </ul>
-        </div>
-    </nav>
-</header>
+    <div id="header"></div>
 
 <main class="about-main">
     <section class="about-hero">
@@ -112,13 +72,6 @@
         <a class="about-button button-light" href="collection.html">Выбрать аромат <span aria-hidden="true">↗</span></a>
     </section>
 </main>
-
-<footer class="about-footer">
-    <a href="main.html" class="footer-wordmark">ODORIS</a>
-    <p>Искусство быть собой.</p>
-    <nav aria-label="Ссылки в подвале"><a href="collection.html">Коллекция</a><a href="nis.html">Нишевая
-        парфюмерия</a><a href="about.html">О нас</a></nav>
-    <small>© ODORIS, 2026</small>
-</footer>
+<div is ='footer'></div>
 </body>
 </html>
