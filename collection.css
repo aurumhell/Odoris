@@ -441,3 +441,5 @@
         font-size: 12px;
     }
 }
+
+@media (max-width: 992px) { .collection-page { padding-top: 0; } }
