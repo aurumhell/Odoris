@@ -1,10 +1,39 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 <head>
-    <meta charset="UTF-8">
-    <title>Title</title>
-</head>
-<body>
+<!-- ODORIS favicon: start -->
+<link rel="icon" type="image/svg+xml" href="assets/favicon/favicon.svg">
+<link rel="icon" type="image/png" sizes="96x96" href="assets/favicon/favicon-96x96.png">
+<link rel="shortcut icon" href="assets/favicon/favicon.ico">
+<link rel="apple-touch-icon" sizes="180x180" href="assets/favicon/apple-touch-icon.png">
+<link rel="manifest" href="assets/favicon/site.webmanifest">
+<meta name="theme-color" content="#912F40">
+<!-- ODORIS favicon: end -->
 
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Корзина — ODORIS</title>
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="utility-pages.css">
+    <script src="components/components.js" defer></script>
+</head>
+<body class="d-flex flex-column min-vh-100">
+    <div id="header"></div>
+    <main class="utility-page">
+        <div class="utility-page__container">
+            <nav class="breadcrumbs" aria-label="Хлебные крошки">
+                <a href="index.html">Главная</a><span>/</span><span>Корзина</span>
+            </nav>
+            <p class="catalog-page__eyebrow">ВАШ ВЫБОР ODORIS</p>
+            <h1>Корзина</h1>
+            <section class="utility-empty-state" aria-labelledby="empty-state-title">
+                <div class="utility-empty-state__mark" aria-hidden="true">◇</div>
+                <h2 id="empty-state-title">Корзина пока пуста</h2>
+                <p>Добавьте понравившиеся ароматы из каталога, чтобы вернуться к ним перед оформлением заказа.</p>
+                <a class="btn btn-primary" href="collection.html">Перейти в каталог</a>
+            </section>
+        </div>
+    </main>
+    <div id="footer"></div>
 </body>
 </html>
