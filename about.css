@@ -38,9 +38,11 @@
 .about-cta{display:flex;align-items:center;justify-content:space-between;gap:30px;padding:75px max(6vw,calc((100vw - 1200px)/2));background:#8f2e40;color:#fff9f4}
 .about-cta .eyebrow{color:#e6c7c4;margin-bottom:18px}.about-cta h2{margin:0}
 .button-light{background:transparent;border-color:rgba(255,255,255,.65);white-space:nowrap}.button-light:hover{background:#fff9f4;color:var(--about-wine)!important}
-.about-footer{padding:42px 24px 28px;text-align:center;background:#2d2527;color:#f7efeb}
-.footer-wordmark{font-family:Georgia,serif;font-size:27px;letter-spacing:.2em}.about-footer p{font-family:Georgia,serif;font-style:italic;color:#c8b5b2;margin:5px 0 24px}
-.about-footer nav{display:flex;justify-content:center;gap:28px;flex-wrap:wrap;margin-bottom:26px}.about-footer nav a{font-size:11px;color:#e2d5d2}.about-footer nav a:hover{color:#fff}
-.about-footer small{font-size:9px;letter-spacing:.1em;color:#a99795}
+
+
+
+
 @media(max-width:900px){.about-hero{grid-template-columns:1fr;gap:0;padding:65px 7% 30px}.about-hero-copy{max-width:650px}.about-hero-art{min-height:380px}.hero-index{left:7%}.values{gap:12px}.value-card{padding:27px 22px}}
-@media(max-width:650px){.about-main{padding-top:108px}.about-hero{padding-top:48px}.about-hero h1{font-size:49px}.hero-description{font-size:14px}.about-hero-art{min-height:330px}.art-bottle{transform:scale(.85)}.orbit-one{width:290px;height:240px}.orbit-two{width:240px;height:320px}.art-stone{width:270px}.about-intro{padding:72px 22px 40px}.values{grid-template-columns:1fr;padding:15px 20px 70px}.value-card{min-height:0}.about-quote{padding:55px 22px}.about-cta{align-items:flex-start;flex-direction:column;padding:55px 24px}.about-footer nav{gap:16px}}
+@media(max-width:650px){.about-main{padding-top:108px}.about-hero{padding-top:48px}.about-hero h1{font-size:49px}.hero-description{font-size:14px}.about-hero-art{min-height:330px}.art-bottle{transform:scale(.85)}.orbit-one{width:290px;height:240px}.orbit-two{width:240px;height:320px}.art-stone{width:270px}.about-intro{padding:72px 22px 40px}.values{grid-template-columns:1fr;padding:15px 20px 70px}.value-card{min-height:0}.about-quote{padding:55px 22px}.about-cta{align-items:flex-start;flex-direction:column;padding:55px 24px}}
+
+@media (max-width: 992px) { .about-main { padding-top: 0; } }
