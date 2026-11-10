@@ -278,12 +278,7 @@
     opacity: 1
 }
 
-.about-footer {
-    padding: 42px 24px 28px;
-    text-align: center;
-    background: #2d2527;
-    color: #f7efeb
-}
+
 
 .footer-wordmark {
     font-family: Georgia, serif;
@@ -291,35 +286,15 @@
     letter-spacing: .2em
 }
 
-.about-footer p {
-    font-family: Georgia, serif;
-    font-style: italic;
-    color: #c8b5b2;
-    margin: 5px 0 24px
-}
 
-.about-footer nav {
-    display: flex;
-    justify-content: center;
-    gap: 28px;
-    flex-wrap: wrap;
-    margin-bottom: 26px
-}
 
-.about-footer nav a {
-    font-size: 11px;
-    color: #e2d5d2
-}
 
-.about-footer nav a:hover {
-    color: #fff
-}
 
-.about-footer small {
-    font-size: 9px;
-    letter-spacing: .1em;
-    color: #a99795
-}
+
+
+
+
+
 
 @media (max-width: 850px) {
     .brands-hero {
@@ -379,3 +354,5 @@
         font-size: 36px
     }
 }
+
+@media (max-width: 992px) { .brands-main { padding-top: 0; } }
