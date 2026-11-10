@@ -1,61 +1,25 @@
 <!DOCTYPE html>
 <html lang="ru">
 <head>
+<!-- ODORIS favicon: start -->
+<link rel="icon" type="image/svg+xml" href="assets/favicon/favicon.svg">
+<link rel="icon" type="image/png" sizes="96x96" href="assets/favicon/favicon-96x96.png">
+<link rel="shortcut icon" href="assets/favicon/favicon.ico">
+<link rel="apple-touch-icon" sizes="180x180" href="assets/favicon/apple-touch-icon.png">
+<link rel="manifest" href="assets/favicon/site.webmanifest">
+<meta name="theme-color" content="#912F40">
+<!-- ODORIS favicon: end -->
+
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Личный кабинет — ODORIS</title>
+    <link rel="stylesheet" href="index.css">
     <link rel="stylesheet" href="profile.css">
+    <script src="components/components.js" defer></script>
 </head>
 <body>
 
-<!-- Шапка сайта ODORIS -->
-<header>
-    <div class="container">
-        <div class="navbar-row">
-            <a href="index.html" class="navbar-brand">
-                <img src="assets/logo.png" alt="ODORIS Logo">
-            </a>
-
-            <div class="search-box">
-                <img src="assets/search.png" alt="Поиск" class="search-inline-icon">
-                <input type="text" placeholder="Поиск ароматов, брендов, нот...">
-                <button type="button" class="search-button">Найти</button>
-            </div>
-
-            <a href="#" class="delivery-link">
-                <img src="assets/geo.png" alt="Город">
-                <span>Москва</span>
-            </a>
-
-            <div class="header-actions">
-                <a href="favorite.html" class="header-action" title="Избранное">
-                    <img src="assets/favorite.png" alt="Избранное">
-                    <span class="counter-badge">3</span>
-                </a>
-                <a href="corzina.html" class="header-action" title="Корзина">
-                    <img src="assets/corz.png" alt="Корзина">
-                    <span class="counter-badge">2</span>
-                </a>
-                <a href="profile.html" class="header-action active" title="Профиль">
-                    <img src="assets/profile.png" alt="Профиль">
-                </a>
-            </div>
-        </div>
-
-        <!-- Подменю каталога -->
-        <div class="header-subnav">
-            <ul class="nav-list">
-                <li><a href="index.html" class="nav-link">Главная</a></li>
-                <li><a href="collection.html" class="nav-link">Коллекции</a></li>
-                <li><a href="season.html" class="nav-link">Сезонные</a></li>
-                <li><a href="hit.html" class="nav-link">Хиты</a></li>
-                <li><a href="nis.html" class="nav-link">Нишевая</a></li>
-                <li><a href="lw.html" class="nav-link">Для неё</a></li>
-                <li><a href="lm.html" class="nav-link">Для него</a></li>
-            </ul>
-        </div>
-    </div>
-</header>
+<div id="header"></div>
 
 <!-- Основной контент личного кабинета -->
 <main class="profile-main">
@@ -254,6 +218,7 @@
                                 <div class="order-box-actions">
                                     <button type="button" class="btn-outline-bordo">Повторить заказ</button>
                                     <button type="button" class="btn-soft">Электронный чек</button>
+                                    <a href="return.html" class="btn-outline-bordo">Оформить возврат</a>
                                 </div>
                             </div>
                         </div>
@@ -331,37 +296,7 @@
     </div>
 </main>
 
-<!-- Подвал ODORIS -->
-
-<footer>
-    <div class="container">
-        <div class="row g-4">
-            <div class="col-md-3">
-                <h5>ODORIS</h5>
-                <p>Галерея селективной и авторской парфюмерии.</p>
-                <p class="small text-white-50">8 800 888 88 88</p>
-            </div>
-            <div class="col-md-3">
-                <h5>О нас</h5>
-                <p><a href="#">Концепция дома</a></p>
-                <p><a href="#">Парфюмеры</a></p>
-                <p><a href="#">Бутики</a></p>
-            </div>
-            <div class="col-md-3">
-                <h5>Клиентам</h5>
-                <p><a href="profile.html">Личный кабинет</a></p>
-                <p><a href="favorite.html">Избранное</a></p>
-                <p><a href="corzina.html">Корзина</a></p>
-            </div>
-            <div class="col-md-3">
-                <h5>Контакты</h5>
-                <p>Барнаул, пр. Ленина, 46</p>
-                <p>Ежедневно с 8:00 до 22:00</p>
-                <p>odoris.support@gmail.com</p>
-            </div>
-        </div>
-    </div>
-</footer>
+<div id="footer"></div>
 
 </body>
 </html>

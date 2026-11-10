@@ -1,10 +1,77 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 <head>
-    <meta charset="UTF-8">
-    <title>Title</title>
-</head>
-<body>
+<!-- ODORIS favicon: start -->
+<link rel="icon" type="image/svg+xml" href="assets/favicon/favicon.svg">
+<link rel="icon" type="image/png" sizes="96x96" href="assets/favicon/favicon-96x96.png">
+<link rel="shortcut icon" href="assets/favicon/favicon.ico">
+<link rel="apple-touch-icon" sizes="180x180" href="assets/favicon/apple-touch-icon.png">
+<link rel="manifest" href="assets/favicon/site.webmanifest">
+<meta name="theme-color" content="#912F40">
+<!-- ODORIS favicon: end -->
 
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Для него — ODORIS</title>
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="catalog-pages.css">
+    <script src="components/components.js" defer></script>
+</head>
+<body class="d-flex flex-column min-vh-100">
+    <div id="header"></div>
+    <main class="catalog-page">
+        <div class="catalog-page__container">
+            <nav class="breadcrumbs" aria-label="Хлебные крошки">
+                <a href="index.html">Главная</a><span class="sep">/</span><span>Для него</span>
+            </nav>
+            <section class="catalog-page__hero">
+                <p class="catalog-page__eyebrow">КОЛЛЕКЦИЯ ДЛЯ НЕГО</p>
+                <h1>Для него</h1>
+                <p>Выразительные композиции с древесным, морским и пряным характером.</p>
+                <a class="catalog-page__link" href="collection.html#catalogGrid">Смотреть всю коллекцию <span aria-hidden="true">↗</span></a>
+            </section>
+            <section class="catalog-page__listing" aria-label="Ароматы раздела">
+                <div class="catalog-page__heading">
+                    <div><p class="catalog-page__eyebrow">ВЫБРАНО ДЛЯ ВАС</p><h2>Ароматы ODORIS</h2></div>
+                    <span>04 композиций</span>
+                </div>
+                <div class="catalog-page__grid">
+            <article class="catalog-product"><a class="catalog-product__link" href="product.html?slug=velvet-noir" aria-label="Открыть аромат Velvet Noir">
+                <div class="catalog-product__image"><img src="assets/velvet-no.png" alt="Velvet Noir" loading="lazy"></div>
+                <div class="catalog-product__body">
+                    <h2>Velvet Noir</h2>
+                    <p>Древесный · пряный</p>
+                    <strong>14 200 ₽</strong>
+                </div>
+            </a></article>
+            <article class="catalog-product"><a class="catalog-product__link" href="product.html?slug=brise-marine" aria-label="Открыть аромат Brise Marine">
+                <div class="catalog-product__image"><img src="assets/ocean-no.png" alt="Brise Marine" loading="lazy"></div>
+                <div class="catalog-product__body">
+                    <h2>Brise Marine</h2>
+                    <p>Морской бриз · соль</p>
+                    <strong>8 900 ₽</strong>
+                </div>
+            </a></article>
+            <article class="catalog-product"><a class="catalog-product__link" href="product.html?slug=bleu-mineral" aria-label="Открыть аромат Bleu Minéral">
+                <div class="catalog-product__image"><img src="assets/blue-no.png" alt="Bleu Minéral" loading="lazy"></div>
+                <div class="catalog-product__body">
+                    <h2>Bleu Minéral</h2>
+                    <p>Минералы · атласский кедр</p>
+                    <strong>12 300 ₽</strong>
+                </div>
+            </a></article>
+            <article class="catalog-product"><a class="catalog-product__link" href="product.html?slug=nuit-profonde" aria-label="Открыть аромат Nuit Profonde">
+                <div class="catalog-product__image"><img src="assets/notch-no.png" alt="Nuit Profonde" loading="lazy"></div>
+                <div class="catalog-product__body">
+                    <h2>Nuit Profonde</h2>
+                    <p>Ладан · дымные смолы</p>
+                    <strong>16 800 ₽</strong>
+                </div>
+            </a></article>
+                </div>
+            </section>
+        </div>
+    </main>
+    <div id="footer"></div>
 </body>
 </html>

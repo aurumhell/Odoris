@@ -11,7 +11,7 @@
     --bordo: #912F40;
     --bordo-dark: #7C202E;
     --line: #E4D5D8;
-    --header-height: 118px;
+    --header-height: 108px;
 }
 
 * {
@@ -53,173 +53,6 @@ img {
     width: min(100% - 40px, 1420px);
     max-width: 1420px;
     margin: 0 auto;
-}
-
-/* ==========================================================================
-   Шапка сайта (полная совместимость с main.css)
-   ========================================================================== */
-header {
-    position: fixed;
-    inset: 0 0 auto;
-    z-index: 1000;
-    background: rgba(145, 47, 64, .92);
-    -webkit-backdrop-filter: blur(12px);
-    backdrop-filter: blur(12px);
-    box-shadow: 0 4px 18px rgba(45, 15, 22, .08);
-}
-
-header .navbar-row {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    min-height: 64px;
-    padding: 6px 0;
-    gap: 24px;
-}
-
-.navbar-brand img {
-    width: 170px;
-    height: auto;
-    max-height: 52px;
-    object-fit: contain;
-}
-
-.search-box {
-    display: flex;
-    align-items: center;
-    gap: 10px;
-    width: 100%;
-    max-width: 540px;
-    height: 42px;
-    padding: 0 4px 0 14px;
-    background: rgba(255, 255, 250, .14);
-    border: 1px solid rgba(255, 255, 250, .45);
-    border-radius: 2px;
-}
-
-.search-inline-icon {
-    width: 18px;
-    height: 18px;
-    object-fit: contain;
-    opacity: .9;
-}
-
-.search-box input {
-    flex: 1;
-    min-width: 0;
-    height: 100%;
-    color: #fff;
-    background: transparent;
-    border: 0;
-    outline: none;
-    font-size: 13px;
-}
-
-.search-box input::placeholder {
-    color: rgba(255, 255, 250, .85);
-}
-
-.search-button {
-    height: 32px;
-    padding: 0 16px;
-    color: var(--bordo);
-    background: var(--paper);
-    border: 0;
-    border-radius: 2px;
-    cursor: pointer;
-    font-size: 11px;
-    font-weight: 600;
-    text-transform: uppercase;
-    letter-spacing: .04em;
-}
-
-.search-button:hover {
-    color: var(--paper);
-    background: var(--bordo-dark);
-}
-
-.delivery-link {
-    display: inline-flex;
-    align-items: center;
-    gap: 6px;
-    color: var(--paper);
-    font-size: 13px;
-    white-space: nowrap;
-}
-
-.delivery-link img {
-    width: 16px;
-    height: 16px;
-}
-
-.header-actions {
-    display: flex;
-    align-items: center;
-    gap: 8px;
-}
-
-.header-action {
-    display: inline-flex;
-    width: 44px;
-    height: 44px;
-    align-items: center;
-    justify-content: center;
-    border-radius: 50%;
-    position: relative;
-    transition: background-color .2s;
-}
-
-.header-action:hover,
-.header-action.active {
-    background: rgba(255, 255, 250, .18);
-}
-
-.header-action img {
-    width: 24px;
-    height: 24px;
-    object-fit: contain;
-}
-
-.counter-badge {
-    position: absolute;
-    top: 3px;
-    right: 3px;
-    background: var(--paper);
-    color: var(--bordo);
-    font-size: 10px;
-    font-weight: 700;
-    width: 16px;
-    height: 16px;
-    border-radius: 50%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    line-height: 1;
-}
-
-.header-subnav {
-    border-top: 1px solid rgba(255, 255, 250, .22);
-    padding: 4px 0 6px;
-}
-
-.header-subnav .nav-list {
-    display: flex;
-    align-items: center;
-    gap: 8px;
-}
-
-.header-subnav .nav-link {
-    display: block;
-    padding: 6px 14px;
-    color: var(--paper);
-    font-size: 12px;
-    letter-spacing: .03em;
-    border-radius: 2px;
-}
-
-.header-subnav .nav-link:hover {
-    color: var(--bordo);
-    background: var(--paper);
 }
 
 /* ==========================================================================
@@ -813,55 +646,6 @@ main.profile-main {
 }
 
 /* ==========================================================================
-   Подвал сайта (полная совместимость с main.css)
-   ========================================================================== */
-footer {
-    margin-top: auto;
-    color: var(--paper);
-    background: var(--bordo-dark);
-}
-
-footer .footer-content {
-    padding-top: 48px;
-    padding-bottom: 40px;
-    display: grid;
-    grid-template-columns: 2fr 1fr 1fr 1.5fr;
-    gap: 40px;
-}
-
-footer h5 {
-    margin: 0 0 16px;
-    color: var(--paper);
-    font: 400 20px Georgia, "Times New Roman", serif;
-}
-
-footer p {
-    margin: 0 0 9px;
-    color: #E7D9DC;
-    font-size: 13px;
-}
-
-footer .footer-links a {
-    display: block;
-    padding: 4px 0;
-    color: #E7D9DC;
-    font-size: 13px;
-}
-
-footer .footer-links a:hover {
-    color: var(--paper);
-    text-decoration: underline;
-}
-
-.footer-bottom-line {
-    border-top: 1px solid rgba(255, 255, 250, .14);
-    padding: 16px 0;
-    text-align: center;
-    color: #C8B8BC;
-    font-size: 12px;
-}
-
-/* ==========================================================================
    Адаптивность (Медиазапросы)
    ========================================================================== */
 @media (max-width: 1024px) {
@@ -871,10 +655,6 @@ footer .footer-links a:hover {
 
     .profile-sidebar {
         position: static;
-    }
-
-    footer .footer-content {
-        grid-template-columns: 1fr 1fr;
     }
 }
 
@@ -904,8 +684,6 @@ footer .footer-links a:hover {
         align-items: flex-start;
         gap: 14px;
     }
-
-    footer .footer-content {
-        grid-template-columns: 1fr;
-    }
 }
+
+@media (max-width: 992px) { main.profile-main { padding-top: 18px; } }

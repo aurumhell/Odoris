@@ -940,3 +940,73 @@ footer a:hover {
     color: #fffaf4;
     background: #351311;
 }
+
+
+/* Общая сетка подвала не зависит от Bootstrap */
+footer .container > .row {
+    display: grid;
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    gap: 24px;
+    margin: 0;
+}
+
+footer .container > .row > [class*="col-"] {
+    width: auto;
+    max-width: none;
+    padding: 0;
+}
+
+@media (max-width: 767px) {
+    footer .container > .row { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+}
+
+@media (max-width: 480px) {
+    footer .container > .row { grid-template-columns: 1fr; }
+}
+
+/* ODORIS follow-up: consistent page height and shared footer layout */
+html, body { min-height: 100%; }
+body { min-height: 100vh; display: flex; flex-direction: column; }
+body > #header { flex: 0 0 auto; }
+body > main { flex: 1 0 auto; min-width: 0; }
+body > #footer { flex: 0 0 auto; width: 100%; margin-top: auto; }
+#footer > footer { width: 100%; margin-top: 0; }
+#footer footer .container {
+    width: min(calc(100% - 48px), 1420px);
+    max-width: 1420px;
+    margin: 0 auto;
+    padding: 40px 0 34px !important;
+    box-sizing: border-box;
+}
+#footer footer .container > .row {
+    display: grid;
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    align-items: start;
+    column-gap: clamp(20px, 3.5vw, 58px);
+    row-gap: 24px;
+    margin: 0;
+}
+#footer footer .container > .row > [class*="col-"] {
+    width: auto; max-width: none; margin: 0; padding: 0;
+}
+#footer footer h5 {
+    margin: 0 0 14px;
+    color: var(--paper);
+    font: 400 19px/1.25 Georgia, "Times New Roman", serif;
+}
+#footer footer p, #footer footer a {
+    color: #E7D9DC;
+    font-size: 13px;
+    line-height: 1.65;
+}
+#footer footer p { margin: 0 0 8px; }
+#footer footer a { text-decoration: none; }
+#footer footer a:hover { color: var(--paper); text-decoration: underline; }
+@media (max-width: 767px) {
+    #footer footer .container > .row { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+}
+@media (max-width: 480px) {
+    #footer footer .container { width: min(calc(100% - 36px), 1420px); padding: 32px 0 28px !important; }
+    #footer footer .container > .row { grid-template-columns: 1fr; row-gap: 20px; }
+}
+

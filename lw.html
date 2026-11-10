@@ -1,10 +1,77 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 <head>
-    <meta charset="UTF-8">
-    <title>Title</title>
-</head>
-<body>
+<!-- ODORIS favicon: start -->
+<link rel="icon" type="image/svg+xml" href="assets/favicon/favicon.svg">
+<link rel="icon" type="image/png" sizes="96x96" href="assets/favicon/favicon-96x96.png">
+<link rel="shortcut icon" href="assets/favicon/favicon.ico">
+<link rel="apple-touch-icon" sizes="180x180" href="assets/favicon/apple-touch-icon.png">
+<link rel="manifest" href="assets/favicon/site.webmanifest">
+<meta name="theme-color" content="#912F40">
+<!-- ODORIS favicon: end -->
 
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Для неё — ODORIS</title>
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="catalog-pages.css">
+    <script src="components/components.js" defer></script>
+</head>
+<body class="d-flex flex-column min-vh-100">
+    <div id="header"></div>
+    <main class="catalog-page">
+        <div class="catalog-page__container">
+            <nav class="breadcrumbs" aria-label="Хлебные крошки">
+                <a href="index.html">Главная</a><span class="sep">/</span><span>Для неё</span>
+            </nav>
+            <section class="catalog-page__hero">
+                <p class="catalog-page__eyebrow">КОЛЛЕКЦИЯ ДЛЯ НЕЁ</p>
+                <h1>Для неё</h1>
+                <p>Цветочные, свежие и деликатные ароматы для собственного настроения.</p>
+                <a class="catalog-page__link" href="collection.html#catalogGrid">Смотреть всю коллекцию <span aria-hidden="true">↗</span></a>
+            </section>
+            <section class="catalog-page__listing" aria-label="Ароматы раздела">
+                <div class="catalog-page__heading">
+                    <div><p class="catalog-page__eyebrow">ВЫБРАНО ДЛЯ ВАС</p><h2>Ароматы ODORIS</h2></div>
+                    <span>04 композиций</span>
+                </div>
+                <div class="catalog-page__grid">
+            <article class="catalog-product"><a class="catalog-product__link" href="product.html?slug=eclat-verte" aria-label="Открыть аромат Éclat Verte">
+                <div class="catalog-product__image"><img src="assets/eclat-verte-no.png" alt="Éclat Verte" loading="lazy"></div>
+                <div class="catalog-product__body">
+                    <h2>Éclat Verte</h2>
+                    <p>Зелёный · свежий</p>
+                    <strong>8 000 ₽</strong>
+                </div>
+            </a></article>
+            <article class="catalog-product"><a class="catalog-product__link" href="product.html?slug=rose-de-damas" aria-label="Открыть аромат Rose de Damas">
+                <div class="catalog-product__image"><img src="assets/roses_parf-no.png" alt="Rose de Damas" loading="lazy"></div>
+                <div class="catalog-product__body">
+                    <h2>Rose de Damas</h2>
+                    <p>Роза · бархатный</p>
+                    <strong>13 400 ₽</strong>
+                </div>
+            </a></article>
+            <article class="catalog-product"><a class="catalog-product__link" href="product.html?slug=the-blanc" aria-label="Открыть аромат Thé Blanc">
+                <div class="catalog-product__image"><img src="assets/tea-no.png" alt="Thé Blanc" loading="lazy"></div>
+                <div class="catalog-product__body">
+                    <h2>Thé Blanc</h2>
+                    <p>Белый чай · деликатный</p>
+                    <strong>7 800 ₽</strong>
+                </div>
+            </a></article>
+            <article class="catalog-product"><a class="catalog-product__link" href="product.html?slug=fleur-celeste" aria-label="Открыть аромат Fleur Céleste">
+                <div class="catalog-product__image"><img src="assets/flora-no.png" alt="Fleur Céleste" loading="lazy"></div>
+                <div class="catalog-product__body">
+                    <h2>Fleur Céleste</h2>
+                    <p>Цветочный · пудровый</p>
+                    <strong>10 500 ₽</strong>
+                </div>
+            </a></article>
+                </div>
+            </section>
+        </div>
+    </main>
+    <div id="footer"></div>
 </body>
 </html>
