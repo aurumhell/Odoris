@@ -1,0 +1,87 @@
+/* ODORIS — empty states for cart and favorites */
+.utility-page .catalog-page__eyebrow {
+    margin: 0 0 12px;
+    color: var(--bordo);
+    font-size: 10px;
+    font-weight: 700;
+    letter-spacing: .2em;
+    text-transform: uppercase;
+}
+
+.utility-page {
+    padding: calc(var(--header-height) + 24px) 24px 84px;
+    background: var(--page);
+}
+
+.utility-page__container {
+    width: min(100%, 1060px);
+    margin: 0 auto;
+    padding-top: 42px;
+}
+
+.utility-page .breadcrumbs {
+    display: flex;
+    gap: 9px;
+    margin: 0 0 34px;
+    color: var(--muted);
+    font-size: 12px;
+}
+
+.utility-page .breadcrumbs a:hover { color: var(--bordo); }
+.utility-page h1 {
+    margin: 0 0 28px;
+    font: 400 clamp(38px, 5vw, 60px)/1.1 Georgia, serif;
+}
+
+.utility-empty-state {
+    display: flex;
+    min-height: 330px;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 46px 24px;
+    text-align: center;
+    background: var(--paper);
+    border: 1px solid var(--line);
+}
+
+.utility-empty-state__mark {
+    display: grid;
+    width: 68px;
+    height: 68px;
+    place-items: center;
+    margin-bottom: 22px;
+    color: var(--bordo);
+    border: 1px solid var(--line);
+    border-radius: 50%;
+    font: 32px Georgia, serif;
+}
+
+.utility-empty-state h2 {
+    margin: 0 0 10px;
+    font: 400 clamp(25px, 3vw, 34px)/1.2 Georgia, serif;
+}
+
+.utility-empty-state p {
+    max-width: 450px;
+    margin: 0 0 24px;
+    color: var(--muted);
+    font-size: 14px;
+}
+
+.utility-empty-state .btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+}
+
+@media (max-width: 992px) { .utility-page { padding-top: 0; } }
+
+@media (max-width: 576px) {
+    .utility-page { padding-right: 18px; padding-left: 18px; }
+    .utility-page__container { padding-top: 28px; }
+    .utility-empty-state { min-height: 290px; padding: 35px 18px; }
+}
+
+/* Keep short utility pages tall enough to anchor the footer. */
+.utility-page { flex: 1 0 auto; }

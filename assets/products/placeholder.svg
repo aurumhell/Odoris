@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 760" role="img" aria-label="Иллюстрация флакона парфюма">
+<rect width="600" height="760" fill="#fffdfa"/>
+<ellipse cx="300" cy="665" rx="170" ry="25" fill="#e9dfdc"/>
+<rect x="245" y="118" width="110" height="112" rx="12" fill="#8f2e40"/>
+<rect x="218" y="210" width="164" height="42" rx="8" fill="#c9b5a8"/>
+<rect x="145" y="240" width="310" height="390" rx="48" fill="#f3e7e1" stroke="#c9aaa6" stroke-width="5"/>
+<path d="M170 270 Q300 240 430 270 L430 600 Q300 640 170 600Z" fill="#fff" opacity=".75"/>
+<rect x="190" y="370" width="220" height="135" rx="5" fill="#fffdfa" stroke="#d9c7c1" stroke-width="2"/>
+<text x="300" y="425" text-anchor="middle" font-family="Georgia,serif" font-size="28" letter-spacing="4" fill="#4b3035">ODORIS</text>
+<text x="300" y="462" text-anchor="middle" font-family="Arial,sans-serif" font-size="12" letter-spacing="2" fill="#8f2e40">FRAGRANCE</text>
+</svg>

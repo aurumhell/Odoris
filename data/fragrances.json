@@ -1,0 +1,981 @@
+[
+  {
+    "slug": "luna",
+    "brand": "Penhaligon's",
+    "name": "Luna",
+    "fullName": "Luna Eau de Toilette",
+    "concentration": "Eau de Toilette",
+    "volume": "10, 30 и 100 мл",
+    "family": "Цветочно-цитрусовый",
+    "recommendedFor": "Если вы любите «Гарри Поттера»",
+    "interestCategory": "movies",
+    "interestLabel": "Кино",
+    "description": "Светлая цветочная композиция с цитрусовым началом, мягкой розой и хвойным оттенком. В официальном описании бренда Luna ассоциируется с апельсином, жасмином и пихтой.",
+    "editorialStory": "Старинные библиотеки, тёплый свет свечей и ощущение, что за обычной дверью скрывается волшебный мир. Это наша ассоциация с мягким и мерцающим характером Luna, а не официальная связь с франшизой.",
+    "keyNotes": [
+      "Апельсин",
+      "Бергамот",
+      "Жасмин",
+      "Роза",
+      "Пихтовый бальзам"
+    ],
+    "image": "assets/products/placeholder.svg",
+    "imageUrl": "https://image-optimizer-reg.production.sephora-asia.net/eyJlZGl0cyI6eyJyZXNpemUiOnt9fX0%3D/images/product_images/zoom_1_Product_5056245035579-Penhaligons-Luna-Eau-De-Toilette-100-ML_781cdda4855ffd96ada11df536b4cae75c67b07b_1681104759.png",
+    "imageSource": "https://www.sephora.sg/brands/penhaligons",
+    "sourcePage": "https://www.penhaligons.com/eu/en/p/luna-eau-de-toilette-30ml--000000000065223850",
+    "titleRu": "Luna Eau de Toilette",
+    "article": "",
+    "rating": null,
+    "ratingCount": null,
+    "volumeOptions": [
+      "100 мл"
+    ],
+    "notesPyramid": {},
+    "characteristics": {
+      "family": "Цветочно-цитрусовый"
+    },
+    "relatedSlugs": [
+      "autumn-dore",
+      "eclat-verte",
+      "velvet-noir",
+      "rose-de-damas"
+    ]
+  },
+  {
+    "slug": "oud-wood",
+    "brand": "TOM FORD",
+    "name": "Oud Wood",
+    "fullName": "Oud Wood Eau de Parfum",
+    "concentration": "Eau de Parfum",
+    "volume": "10, 30, 50 и 100 мл (в зависимости от рынка)",
+    "family": "Древесно-пряный",
+    "recommendedFor": "Если вы любите «Дюну»",
+    "interestCategory": "movies",
+    "interestLabel": "Кино",
+    "description": "Глубокая древесная композиция на основе уда и экзотических пород дерева с тёплой амбровой глубиной.",
+    "editorialStory": "Бескрайние пески, пряный ветер, древние тайны и большие пространства. Сухое древесное звучание Oud Wood созвучно такому настроению; это редакционная ароматическая ассоциация.",
+    "keyNotes": [
+      "Кардамон",
+      "Розовый перец",
+      "Уд",
+      "Пачули",
+      "Амбра",
+      "Сандал",
+      "Ветивер",
+      "Бобы тонка"
+    ],
+    "image": "assets/products/oud-wood.webp",
+    "imageUrl": "https://www.tomfordbeauty.com/cdn/shop/files/tf_sku_T1XF01_2000x2000_0.png?v=1784719505&width=1600",
+    "imageSource": "https://www.tomfordbeauty.com/products/oud-wood-eau-de-parfum",
+    "sourcePage": "https://www.tomfordbeauty.com/products/oud-wood-eau-de-parfum",
+    "titleRu": "Oud Wood Eau de Parfum",
+    "article": "",
+    "rating": null,
+    "ratingCount": null,
+    "volumeOptions": [
+      "100 мл"
+    ],
+    "notesPyramid": {},
+    "characteristics": {
+      "family": "Древесно-пряный"
+    },
+    "relatedSlugs": [
+      "autumn-dore",
+      "eclat-verte",
+      "velvet-noir",
+      "rose-de-damas"
+    ]
+  },
+  {
+    "slug": "jazz-club",
+    "brand": "Maison Margiela",
+    "brandLine": "REPLICA",
+    "name": "Jazz Club",
+    "fullName": "REPLICA Jazz Club Eau de Toilette",
+    "concentration": "Eau de Toilette",
+    "volume": "30 и 100 мл (также доступны наборы и рефилы)",
+    "family": "Амброво-древесный",
+    "recommendedFor": "Если вам близки джаз-клубы и винил",
+    "interestCategory": "music",
+    "interestLabel": "Музыка",
+    "description": "Тёплая композиция, созданная вокруг атмосферы камерного джаз-клуба: пряный розовый перец, ромовый аккорд, табачный лист и ваниль.",
+    "editorialStory": "Негромкий саксофон, тёплый свет, потрескивание пластинки и долгие разговоры после концерта. Сам бренд описывает Jazz Club через атмосферу частного джаз-клуба в Бруклине.",
+    "keyNotes": [
+      "Розовый перец",
+      "Лимон",
+      "Нероли",
+      "Ром",
+      "Шалфей",
+      "Табачный лист",
+      "Ваниль",
+      "Стиракс"
+    ],
+    "image": "assets/products/placeholder.svg",
+    "imageUrl": "https://img-product.sephora.me/dw/image/v2/BKWK_PRD/on/demandware.static/-/Sites-masterCatalog_Sephora/default/dw733d475d/images/hi-res/SKU/SKU_3327/536396_swatch.jpg?fmt=webp&q=85&sm=fit&sw=1320",
+    "imageSource": "https://www.sephora.me/ae-en/shop/niche-fragrances/niche-fragrance-app",
+    "sourcePage": "https://www.maisonmargiela-fragrances.eu/en_GB/fragrances/discover/replica-memories/replica-jazz-club/MM008.html",
+    "titleRu": "REPLICA Jazz Club Eau de Toilette",
+    "article": "",
+    "rating": null,
+    "ratingCount": null,
+    "volumeOptions": [
+      "100 мл"
+    ],
+    "notesPyramid": {},
+    "characteristics": {
+      "family": "Амброво-древесный"
+    },
+    "relatedSlugs": [
+      "autumn-dore",
+      "eclat-verte",
+      "velvet-noir",
+      "rose-de-damas"
+    ]
+  },
+  {
+    "slug": "mixed-emotions",
+    "brand": "BYREDO",
+    "name": "Mixed Emotions",
+    "fullName": "Mixed Emotions Eau de Parfum",
+    "concentration": "Eau de Parfum",
+    "volume": "50 и 100 мл",
+    "family": "Древесный, чайный",
+    "recommendedFor": "Если вы слушаете инди и электронную музыку",
+    "interestCategory": "music",
+    "interestLabel": "Музыка",
+    "description": "Контраст чёрной смородины и мате встречается с чёрным чаем и листьями фиалки; древесная база добавляет композиции спокойную глубину.",
+    "editorialStory": "Неожиданные переходы, атмосферные альбомы и музыка, которая при каждом прослушивании звучит немного иначе. Контрастность Mixed Emotions хорошо поддерживает эту ассоциацию.",
+    "keyNotes": [
+      "Чёрная смородина",
+      "Мате",
+      "Листья фиалки",
+      "Цейлонский чёрный чай",
+      "Берёзовая древесина",
+      "Папирус"
+    ],
+    "image": "assets/products/placeholder.svg",
+    "imageUrl": "https://feature.com/cdn/shop/products/Byredo-Mixed-Emotions-Eau-de-Parfum---50ml-100269---Feature---December-28-2021---01.jpg?v=1651001071",
+    "imageSource": "https://feature.com/products/byredo-mixed-emotions-eau-de-parfum-100ml",
+    "sourcePage": "https://www.byredo.com/se_en/p/mixed-emotion-eau-de-parfum",
+    "titleRu": "Mixed Emotions Eau de Parfum",
+    "article": "",
+    "rating": null,
+    "ratingCount": null,
+    "volumeOptions": [
+      "100 мл"
+    ],
+    "notesPyramid": {},
+    "characteristics": {
+      "family": "Древесный, чайный"
+    },
+    "relatedSlugs": [
+      "autumn-dore",
+      "eclat-verte",
+      "velvet-noir",
+      "rose-de-damas"
+    ]
+  },
+  {
+    "slug": "bibliotheque",
+    "brand": "BYREDO",
+    "name": "Bibliothèque",
+    "fullName": "Bibliothèque Eau de Parfum",
+    "concentration": "Eau de Parfum",
+    "volume": "50 и 100 мл",
+    "family": "Древесный, фруктово-кожаный",
+    "recommendedFor": "Если вы любите библиотеки и старые книги",
+    "interestCategory": "books",
+    "interestLabel": "Книги",
+    "description": "Композиция, вдохновлённая атмосферой старых книг и кожаных переплётов: слива и корица переходят в кожаный аккорд и фиалку, а в базе звучат древесина, пачули и ваниль.",
+    "editorialStory": "Тихие читальные залы, потёртые переплёты, деревянные стеллажи и удовольствие потеряться в тексте. Byredo прямо описывает Bibliothèque через образ старых книг и тёмных деревянных полок.",
+    "keyNotes": [
+      "Слива",
+      "Корица",
+      "Кожаный аккорд",
+      "Фиалка",
+      "Берёзовая древесина",
+      "Пачули",
+      "Ваниль"
+    ],
+    "image": "assets/products/bibliotheque.jpg",
+    "imageUrl": "https://www.ingredients-store.com/data/images/c9/edp-50ml-bibliotheque-cr_sq_retina.1000x1600.shrink_only.q85.jpg",
+    "imageSource": "https://www.ingredients-store.com/byredo-bibliothque-eau-de-parfum",
+    "sourcePage": "https://www.byredo.com/se_en/p/bibliotheque-eau-de-parfum?sku=0065205658",
+    "titleRu": "Bibliothèque Eau de Parfum",
+    "article": "",
+    "rating": null,
+    "ratingCount": null,
+    "volumeOptions": [
+      "100 мл"
+    ],
+    "notesPyramid": {},
+    "characteristics": {
+      "family": "Древесный, фруктово-кожаный"
+    },
+    "relatedSlugs": [
+      "autumn-dore",
+      "eclat-verte",
+      "velvet-noir",
+      "rose-de-damas"
+    ]
+  },
+  {
+    "slug": "tobacco-vanille",
+    "brand": "TOM FORD",
+    "name": "Tobacco Vanille",
+    "fullName": "Tobacco Vanille Eau de Parfum",
+    "concentration": "Eau de Parfum",
+    "volume": "10, 50 и 100 мл (в зависимости от рынка)",
+    "family": "Амброво-пряный",
+    "recommendedFor": "Если вы читаете готику и тёмную классику",
+    "interestCategory": "books",
+    "interestLabel": "Книги",
+    "description": "Насыщенный тёплый аромат с табачным листом, пряностями, бобами тонка, какао и ванильными оттенками.",
+    "editorialStory": "Загадочные поместья, сложные герои и тайны прошлого. Насыщенный табачно-ванильный характер Tobacco Vanille создаёт подходящее камерное настроение; это редакционная ассоциация, а не официальная связь с книгами.",
+    "keyNotes": [
+      "Табачный лист",
+      "Имбирь",
+      "Пряности",
+      "Бобы тонка",
+      "Какао",
+      "Фруктовый аккорд",
+      "Ваниль"
+    ],
+    "image": "assets/products/tobacco-vanille.webp",
+    "imageUrl": "https://www.tomfordbeauty.com/cdn/shop/files/tf_sku_T0CA01_2000x2000_0.png?v=1779290436",
+    "imageSource": "https://www.tomfordbeauty.com/products/tobacco-vanille-eau-de-parfum",
+    "sourcePage": "https://www.tomfordbeauty.com/products/tobacco-vanille-eau-de-parfum",
+    "titleRu": "Tobacco Vanille Eau de Parfum",
+    "article": "",
+    "rating": null,
+    "ratingCount": null,
+    "volumeOptions": [
+      "100 мл"
+    ],
+    "notesPyramid": {},
+    "characteristics": {
+      "family": "Амброво-пряный"
+    },
+    "relatedSlugs": [
+      "autumn-dore",
+      "eclat-verte",
+      "velvet-noir",
+      "rose-de-damas"
+    ]
+  },
+  {
+    "slug": "the-bewitching-yasmine",
+    "brand": "Penhaligon's",
+    "brandLine": "PORTRAITS",
+    "name": "The Bewitching Yasmine",
+    "fullName": "The Bewitching Yasmine Eau de Parfum",
+    "concentration": "Eau de Parfum",
+    "volume": "75 мл",
+    "family": "Амбровый, древесный",
+    "recommendedFor": "Если вы выбираете фэнтези-RPG и квесты",
+    "interestCategory": "games",
+    "interestLabel": "Игры",
+    "description": "Чувственная амбровая композиция, в которой кофе и кардамон соседствуют с жасмином, а ваниль, ладан и удовый аккорд формируют насыщенную базу.",
+    "editorialStory": "Магические миры, загадочные персонажи, восточные города и сюжетные линии с неожиданным поворотом. Необычная крышка-фигурка и тёмное звучание аромата поддерживают ассоциацию с фэнтези-вселенной.",
+    "keyNotes": [
+      "Кофе",
+      "Кардамон",
+      "Жасмин",
+      "Ваниль",
+      "Ладан",
+      "Уд"
+    ],
+    "image": "assets/products/placeholder.svg",
+    "imageUrl": "https://cdn.basler-beauty.de/out/pictures/generated/product/1/980_980_100/2518775-PENHALIGON-S-Portraits-Bewitching-Yasmine-Eau-de-Parfum.e41fa8c4.jpg",
+    "imageSource": "https://www.basler-beauty.ie/brands/penhaligon-s/penhaligon-s-portraits-bewitching-yasmine-eau-de-parfum-75-ml.html",
+    "sourcePage": "https://www.penhaligons.com/us/en/p/the-bewitching-yasmine-eau-de-parfum-75-ml--000000000065173403",
+    "titleRu": "The Bewitching Yasmine Eau de Parfum",
+    "article": "",
+    "rating": null,
+    "ratingCount": null,
+    "volumeOptions": [
+      "75 мл"
+    ],
+    "notesPyramid": {},
+    "characteristics": {
+      "family": "Амбровый, древесный"
+    },
+    "relatedSlugs": [
+      "autumn-dore",
+      "eclat-verte",
+      "velvet-noir",
+      "rose-de-damas"
+    ]
+  },
+  {
+    "slug": "wood-sage-sea-salt",
+    "brand": "JO MALONE LONDON",
+    "name": "Wood Sage & Sea Salt",
+    "fullName": "Wood Sage & Sea Salt Cologne",
+    "concentration": "Cologne",
+    "volume": "30, 50 и 100 мл (в зависимости от рынка)",
+    "family": "Свежий древесно-минеральный",
+    "recommendedFor": "Если вам нравятся открытые игровые миры и исследование",
+    "interestCategory": "games",
+    "interestLabel": "Игры",
+    "description": "Свежая древесно-минеральная композиция, вдохновлённая продуваемым ветром британским побережьем: семена амбретты, морская соль и шалфей.",
+    "editorialStory": "Неспешное исследование карты, скрытые тропы, звуки природы и свобода выбирать маршрут. Это ассоциация с ощущением ветреного побережья, которое бренд использует в описании аромата.",
+    "keyNotes": [
+      "Семена амбретты",
+      "Морская соль",
+      "Шалфей"
+    ],
+    "image": "assets/products/wood-sage-sea-salt.webp",
+    "imageUrl": "https://cosbar.com/cdn/shop/files/690251033713_grande.jpg?v=1752641732",
+    "imageSource": "https://cosbar.com/products/wood-sage-sea-salt-cologne-webp01843001-t",
+    "sourcePage": "https://www.jomalone.com/wood-sage-sea-salt",
+    "titleRu": "Wood Sage & Sea Salt Cologne",
+    "article": "",
+    "rating": null,
+    "ratingCount": null,
+    "volumeOptions": [
+      "100 мл"
+    ],
+    "notesPyramid": {},
+    "characteristics": {
+      "family": "Свежий древесно-минеральный"
+    },
+    "relatedSlugs": [
+      "autumn-dore",
+      "eclat-verte",
+      "velvet-noir",
+      "rose-de-damas"
+    ]
+  },
+  {
+    "slug": "coffee-break",
+    "brand": "Maison Margiela",
+    "brandLine": "REPLICA",
+    "name": "Coffee Break",
+    "fullName": "REPLICA Coffee Break Eau de Toilette",
+    "concentration": "Eau de Toilette",
+    "volume": "10 и 100 мл (варианты могут отличаться по рынкам)",
+    "family": "Фужерный, гурманский",
+    "recommendedFor": "Если ваше хобби — кофе и домашняя кофейня",
+    "interestCategory": "hobbies",
+    "interestLabel": "Хобби",
+    "description": "Уютный аромат кофейного перерыва: кофейный аккорд и молочная пена сочетаются с лавандой, мятой, цветами апельсина и древесными оттенками.",
+    "editorialStory": "Новые зёрна, точный помол, рисунки на молочной пене и неторопливые паузы. Бренд описывает Coffee Break как воспоминание о сливочном кофе в уютной кофейне зимой.",
+    "keyNotes": [
+      "Кофейный аккорд",
+      "Красное яблоко",
+      "Лимон",
+      "Лаванда",
+      "Мята",
+      "Цветок апельсина",
+      "Молочная пена",
+      "Сандал",
+      "Кедр"
+    ],
+    "image": "assets/products/placeholder.svg",
+    "imageUrl": "https://www.sephora.fr/on/demandware.static/-/Sites-masterCatalog_Sephora/default/dw6a126397/images/hi-res/SKU/SKU_3375/536394_swatch.jpg",
+    "imageSource": "https://www.sephora.fr/p/replica-coffee-break-edt-P3897098.html",
+    "sourcePage": "https://www.maisonmargiela-fragrances.us/fragrances/replica-eau-de-toilette/replica-coffee-break/MM006.html",
+    "titleRu": "REPLICA Coffee Break Eau de Toilette",
+    "article": "",
+    "rating": null,
+    "ratingCount": null,
+    "volumeOptions": [
+      "100 мл"
+    ],
+    "notesPyramid": {},
+    "characteristics": {
+      "family": "Фужерный, гурманский"
+    },
+    "relatedSlugs": [
+      "autumn-dore",
+      "eclat-verte",
+      "velvet-noir",
+      "rose-de-damas"
+    ]
+  },
+  {
+    "slug": "peony-blush-suede",
+    "brand": "JO MALONE LONDON",
+    "name": "Peony & Blush Suede",
+    "fullName": "Peony & Blush Suede Cologne",
+    "concentration": "Cologne",
+    "volume": "9, 30, 50 и 100 мл",
+    "family": "Цветочный, мягкий",
+    "recommendedFor": "Если вы увлекаетесь цветами и флористикой",
+    "interestCategory": "hobbies",
+    "interestLabel": "Хобби",
+    "description": "Пышные пионы и сочное красное яблоко сочетаются с жасмином, розой и мягким замшевым аккордом.",
+    "editorialStory": "Собирать букеты, сочетать оттенки и замечать красоту деталей. Цветочный характер Peony & Blush Suede подходит к такому увлечению и передаёт настроение цветочной мастерской.",
+    "keyNotes": [
+      "Красное яблоко",
+      "Пион",
+      "Жасмин",
+      "Роза",
+      "Левкой",
+      "Мягкая замша"
+    ],
+    "image": "assets/products/peony-blush-suede.jpg",
+    "imageUrl": "https://www.my-origines.com/on/demandware.static/-/Sites-size-master/default/dw36bd66ad/images/P7624016_P.jpg",
+    "imageSource": "https://www.my-origines.com/fr/peony-blush-suede-P7624X05.html",
+    "sourcePage": "https://www.jomalone.com/product/25946/27028/colognes/peony-blush-suede-cologne/",
+    "titleRu": "Peony & Blush Suede Cologne",
+    "article": "",
+    "rating": null,
+    "ratingCount": null,
+    "volumeOptions": [
+      "100 мл"
+    ],
+    "notesPyramid": {},
+    "characteristics": {
+      "family": "Цветочный, мягкий"
+    },
+    "relatedSlugs": [
+      "autumn-dore",
+      "eclat-verte",
+      "velvet-noir",
+      "rose-de-damas"
+    ]
+  },
+  {
+    "slug": "autumn-dore",
+    "brand": "Коллекция ODORIS",
+    "name": "L’Automne Doré",
+    "fullName": "L’Automne Doré",
+    "family": "Амбровый · согревающий",
+    "description": "Аромат с амбровым, согревающим характером.",
+    "price": "9 400 ₽",
+    "image": "assets/ambre-no.png",
+    "interestCategory": "",
+    "interestLabel": "Каталог ODORIS",
+    "recommendedFor": "",
+    "editorialStory": "",
+    "concentration": "",
+    "volume": "",
+    "keyNotes": [],
+    "aliases": [
+      "L'Automne Doré",
+      "L Automne Dore",
+      "Autumn Doré"
+    ],
+    "titleRu": "L’Automne Doré",
+    "article": "",
+    "rating": null,
+    "ratingCount": null,
+    "volumeOptions": [],
+    "notesPyramid": {},
+    "characteristics": {
+      "family": "Амбровый · согревающий"
+    },
+    "relatedSlugs": [
+      "eclat-verte",
+      "velvet-noir",
+      "rose-de-damas",
+      "solar-ambience"
+    ]
+  },
+  {
+    "slug": "eclat-verte",
+    "brand": "Коллекция ODORIS",
+    "name": "Éclat Verte",
+    "fullName": "Éclat Verte",
+    "family": "Зелёный · свежий",
+    "description": "Свежий аромат с зелёным характером.",
+    "price": "8 000 ₽",
+    "image": "assets/eclat-verte-no.png",
+    "interestCategory": "",
+    "interestLabel": "Каталог ODORIS",
+    "recommendedFor": "",
+    "editorialStory": "",
+    "concentration": "",
+    "volume": "",
+    "keyNotes": [],
+    "aliases": [
+      "Eclat Verte",
+      "Зелёная гармония"
+    ],
+    "titleRu": "Зеленая гармония",
+    "article": "02342392348235",
+    "rating": 5,
+    "ratingCount": 234,
+    "volumeOptions": [
+      "250 мл",
+      "500 мл"
+    ],
+    "notesPyramid": {
+      "top": [
+        "Бергамот",
+        "Зелёный мандарин",
+        "Свежие зелёные листья"
+      ],
+      "heart": [
+        "Зелёный чай",
+        "Жасмин",
+        "Герань"
+      ],
+      "base": [
+        "Кедр",
+        "Сандал",
+        "Белый мускус"
+      ]
+    },
+    "characteristics": {
+      "family": "Зелёные / цветочно-древесные",
+      "character": "Свежий, элегантный, утончённый, спокойный",
+      "sweetness": "Низкая",
+      "freshness": "Высокая",
+      "floral": "Средняя",
+      "woody": "Средняя → высокая в базе",
+      "trail": "Мягкий, благородный",
+      "impression": "Чистота, природа, роскошь, винтажная эстетика",
+      "season": "Весна, лето, ранняя осень",
+      "time": "День и вечер",
+      "style": "Унисекс"
+    },
+    "relatedSlugs": [
+      "autumn-dore",
+      "solar-ambience",
+      "brise-marine",
+      "the-blanc"
+    ]
+  },
+  {
+    "slug": "velvet-noir",
+    "brand": "Коллекция ODORIS",
+    "name": "Velvet Noir",
+    "fullName": "Velvet Noir",
+    "family": "Древесный · пряный",
+    "description": "Древесный аромат с пряным характером.",
+    "price": "14 200 ₽",
+    "image": "assets/velvet-no.png",
+    "interestCategory": "",
+    "interestLabel": "Каталог ODORIS",
+    "recommendedFor": "",
+    "editorialStory": "",
+    "concentration": "",
+    "volume": "",
+    "keyNotes": [],
+    "aliases": [],
+    "titleRu": "Velvet Noir",
+    "article": "",
+    "rating": null,
+    "ratingCount": null,
+    "volumeOptions": [],
+    "notesPyramid": {},
+    "characteristics": {
+      "family": "Древесный · пряный"
+    },
+    "relatedSlugs": [
+      "autumn-dore",
+      "eclat-verte",
+      "rose-de-damas",
+      "solar-ambience"
+    ]
+  },
+  {
+    "slug": "rose-de-damas",
+    "brand": "Коллекция ODORIS",
+    "name": "Rose de Damas",
+    "fullName": "Rose de Damas",
+    "family": "Роза · бархатный",
+    "description": "Цветочный аромат с розовым, бархатным характером.",
+    "price": "13 400 ₽",
+    "image": "assets/roses_parf-no.png",
+    "interestCategory": "",
+    "interestLabel": "Каталог ODORIS",
+    "recommendedFor": "",
+    "editorialStory": "",
+    "concentration": "",
+    "volume": "",
+    "keyNotes": [],
+    "aliases": [],
+    "titleRu": "Rose de Damas",
+    "article": "",
+    "rating": null,
+    "ratingCount": null,
+    "volumeOptions": [],
+    "notesPyramid": {},
+    "characteristics": {
+      "family": "Роза · бархатный"
+    },
+    "relatedSlugs": [
+      "autumn-dore",
+      "eclat-verte",
+      "velvet-noir",
+      "solar-ambience"
+    ]
+  },
+  {
+    "slug": "solar-ambience",
+    "brand": "Коллекция ODORIS",
+    "name": "Solar Ambience",
+    "fullName": "Solar Ambience",
+    "family": "Древесный · тёплый",
+    "description": "Тёплый аромат с древесным характером.",
+    "price": "5 500 ₽",
+    "image": "assets/solar-no.png",
+    "interestCategory": "",
+    "interestLabel": "Каталог ODORIS",
+    "recommendedFor": "",
+    "editorialStory": "",
+    "concentration": "",
+    "volume": "",
+    "keyNotes": [],
+    "aliases": [],
+    "titleRu": "Solar Ambience",
+    "article": "",
+    "rating": null,
+    "ratingCount": null,
+    "volumeOptions": [],
+    "notesPyramid": {},
+    "characteristics": {
+      "family": "Древесный · тёплый"
+    },
+    "relatedSlugs": [
+      "autumn-dore",
+      "eclat-verte",
+      "velvet-noir",
+      "rose-de-damas"
+    ]
+  },
+  {
+    "slug": "the-blanc",
+    "brand": "Коллекция ODORIS",
+    "name": "Thé Blanc",
+    "fullName": "Thé Blanc",
+    "family": "Белый чай · деликатный",
+    "description": "Деликатный аромат с ассоциацией белого чая.",
+    "price": "7 800 ₽",
+    "image": "assets/tea-no.png",
+    "interestCategory": "",
+    "interestLabel": "Каталог ODORIS",
+    "recommendedFor": "",
+    "editorialStory": "",
+    "concentration": "",
+    "volume": "",
+    "keyNotes": [],
+    "aliases": [
+      "The Blanc"
+    ],
+    "titleRu": "Thé Blanc",
+    "article": "",
+    "rating": null,
+    "ratingCount": null,
+    "volumeOptions": [],
+    "notesPyramid": {},
+    "characteristics": {
+      "family": "Белый чай · деликатный"
+    },
+    "relatedSlugs": [
+      "autumn-dore",
+      "eclat-verte",
+      "velvet-noir",
+      "rose-de-damas"
+    ]
+  },
+  {
+    "slug": "brise-marine",
+    "brand": "Коллекция ODORIS",
+    "name": "Brise Marine",
+    "fullName": "Brise Marine",
+    "family": "Морской бриз · соль",
+    "description": "Свежий аромат с морскими и солёными ассоциациями.",
+    "price": "8 900 ₽",
+    "image": "assets/ocean-no.png",
+    "interestCategory": "",
+    "interestLabel": "Каталог ODORIS",
+    "recommendedFor": "",
+    "editorialStory": "",
+    "concentration": "",
+    "volume": "",
+    "keyNotes": [],
+    "aliases": [],
+    "titleRu": "Brise Marine",
+    "article": "",
+    "rating": null,
+    "ratingCount": null,
+    "volumeOptions": [],
+    "notesPyramid": {},
+    "characteristics": {
+      "family": "Морской бриз · соль"
+    },
+    "relatedSlugs": [
+      "autumn-dore",
+      "eclat-verte",
+      "velvet-noir",
+      "rose-de-damas"
+    ]
+  },
+  {
+    "slug": "fleur-celeste",
+    "brand": "Коллекция ODORIS",
+    "name": "Fleur Céleste",
+    "fullName": "Fleur Céleste",
+    "family": "Цветочный · пудровый",
+    "description": "Цветочный аромат с мягким пудровым характером.",
+    "price": "10 500 ₽",
+    "image": "assets/flora-no.png",
+    "interestCategory": "",
+    "interestLabel": "Каталог ODORIS",
+    "recommendedFor": "",
+    "editorialStory": "",
+    "concentration": "",
+    "volume": "",
+    "keyNotes": [],
+    "aliases": [
+      "Fleur Celeste"
+    ],
+    "titleRu": "Fleur Céleste",
+    "article": "",
+    "rating": null,
+    "ratingCount": null,
+    "volumeOptions": [],
+    "notesPyramid": {},
+    "characteristics": {
+      "family": "Цветочный · пудровый"
+    },
+    "relatedSlugs": [
+      "autumn-dore",
+      "eclat-verte",
+      "velvet-noir",
+      "rose-de-damas"
+    ]
+  },
+  {
+    "slug": "soleil-dor",
+    "brand": "Коллекция ODORIS",
+    "name": "Soleil d’Or",
+    "fullName": "Soleil d’Or",
+    "family": "Цитрусовый · солнечный",
+    "description": "Солнечный аромат с цитрусовым характером.",
+    "price": "11 200 ₽",
+    "image": "assets/sun_parf-no.png",
+    "interestCategory": "",
+    "interestLabel": "Каталог ODORIS",
+    "recommendedFor": "",
+    "editorialStory": "",
+    "concentration": "",
+    "volume": "",
+    "keyNotes": [],
+    "aliases": [
+      "Soleil d'Or"
+    ],
+    "titleRu": "Soleil d’Or",
+    "article": "",
+    "rating": null,
+    "ratingCount": null,
+    "volumeOptions": [],
+    "notesPyramid": {},
+    "characteristics": {
+      "family": "Цитрусовый · солнечный"
+    },
+    "relatedSlugs": [
+      "autumn-dore",
+      "eclat-verte",
+      "velvet-noir",
+      "rose-de-damas"
+    ]
+  },
+  {
+    "slug": "rouge-solaire",
+    "brand": "Коллекция ODORIS",
+    "name": "Rouge Solaire",
+    "fullName": "Rouge Solaire",
+    "family": "Пряная вишня · шафран",
+    "description": "Пряный аромат с вишнёвой и шафрановой ассоциацией.",
+    "price": "15 000 ₽",
+    "image": "assets/blood-no.png",
+    "interestCategory": "",
+    "interestLabel": "Каталог ODORIS",
+    "recommendedFor": "",
+    "editorialStory": "",
+    "concentration": "",
+    "volume": "",
+    "keyNotes": [],
+    "aliases": [],
+    "titleRu": "Rouge Solaire",
+    "article": "",
+    "rating": null,
+    "ratingCount": null,
+    "volumeOptions": [],
+    "notesPyramid": {},
+    "characteristics": {
+      "family": "Пряная вишня · шафран"
+    },
+    "relatedSlugs": [
+      "autumn-dore",
+      "eclat-verte",
+      "velvet-noir",
+      "rose-de-damas"
+    ]
+  },
+  {
+    "slug": "bleu-mineral",
+    "brand": "Коллекция ODORIS",
+    "name": "Bleu Minéral",
+    "fullName": "Bleu Minéral",
+    "family": "Минералы · атласский кедр",
+    "description": "Аромат с минеральным характером и ассоциацией атласского кедра.",
+    "price": "12 300 ₽",
+    "image": "assets/blue-no.png",
+    "interestCategory": "",
+    "interestLabel": "Каталог ODORIS",
+    "recommendedFor": "",
+    "editorialStory": "",
+    "concentration": "",
+    "volume": "",
+    "keyNotes": [],
+    "aliases": [
+      "Bleu Mineral"
+    ],
+    "titleRu": "Bleu Minéral",
+    "article": "",
+    "rating": null,
+    "ratingCount": null,
+    "volumeOptions": [],
+    "notesPyramid": {},
+    "characteristics": {
+      "family": "Минералы · атласский кедр"
+    },
+    "relatedSlugs": [
+      "autumn-dore",
+      "eclat-verte",
+      "velvet-noir",
+      "rose-de-damas"
+    ]
+  },
+  {
+    "slug": "nuit-profonde",
+    "brand": "Коллекция ODORIS",
+    "name": "Nuit Profonde",
+    "fullName": "Nuit Profonde",
+    "family": "Ладан · дымные смолы",
+    "description": "Глубокий аромат с ассоциацией ладана и дымных смол.",
+    "price": "16 800 ₽",
+    "image": "assets/notch-no.png",
+    "interestCategory": "",
+    "interestLabel": "Каталог ODORIS",
+    "recommendedFor": "",
+    "editorialStory": "",
+    "concentration": "",
+    "volume": "",
+    "keyNotes": [],
+    "aliases": [],
+    "titleRu": "Nuit Profonde",
+    "article": "",
+    "rating": null,
+    "ratingCount": null,
+    "volumeOptions": [],
+    "notesPyramid": {},
+    "characteristics": {
+      "family": "Ладан · дымные смолы"
+    },
+    "relatedSlugs": [
+      "autumn-dore",
+      "eclat-verte",
+      "velvet-noir",
+      "rose-de-damas"
+    ]
+  },
+  {
+    "slug": "flora-mystique",
+    "brand": "Коллекция ODORIS",
+    "name": "Flora Mystique",
+    "fullName": "Flora Mystique",
+    "family": "Цветочный · пудровый",
+    "description": "Цветочный аромат с пудровой ассоциацией.",
+    "price": "9 500 ₽",
+    "image": "assets/flora.png",
+    "interestCategory": "",
+    "interestLabel": "Каталог ODORIS",
+    "recommendedFor": "",
+    "editorialStory": "",
+    "concentration": "",
+    "volume": "",
+    "keyNotes": [],
+    "aliases": [],
+    "titleRu": "Flora Mystique",
+    "article": "",
+    "rating": null,
+    "ratingCount": null,
+    "volumeOptions": [],
+    "notesPyramid": {},
+    "characteristics": {
+      "family": "Цветочный · пудровый"
+    },
+    "relatedSlugs": [
+      "autumn-dore",
+      "eclat-verte",
+      "velvet-noir",
+      "rose-de-damas"
+    ]
+  },
+  {
+    "slug": "ambre-imperial",
+    "brand": "Коллекция ODORIS",
+    "name": "Ambre Impérial",
+    "fullName": "Ambre Impérial",
+    "family": "Амбровый · тёплый",
+    "description": "Тёплый аромат с амбровым характером.",
+    "price": "11 800 ₽",
+    "image": "assets/ambre.png",
+    "interestCategory": "",
+    "interestLabel": "Каталог ODORIS",
+    "recommendedFor": "",
+    "editorialStory": "",
+    "concentration": "",
+    "volume": "",
+    "keyNotes": [],
+    "aliases": [
+      "Ambre Imperial"
+    ],
+    "titleRu": "Ambre Impérial",
+    "article": "",
+    "rating": null,
+    "ratingCount": null,
+    "volumeOptions": [],
+    "notesPyramid": {},
+    "characteristics": {
+      "family": "Амбровый · тёплый"
+    },
+    "relatedSlugs": [
+      "autumn-dore",
+      "eclat-verte",
+      "velvet-noir",
+      "rose-de-damas"
+    ]
+  },
+  {
+    "slug": "oceanic-drift",
+    "brand": "Коллекция ODORIS",
+    "name": "Oceanic Drift",
+    "fullName": "Oceanic Drift",
+    "family": "Морской · акватический",
+    "description": "Морской акватический аромат.",
+    "price": "8 900 ₽",
+    "image": "assets/ocean.png",
+    "interestCategory": "",
+    "interestLabel": "Каталог ODORIS",
+    "recommendedFor": "",
+    "editorialStory": "",
+    "concentration": "",
+    "volume": "",
+    "keyNotes": [],
+    "aliases": [],
+    "titleRu": "Oceanic Drift",
+    "article": "",
+    "rating": null,
+    "ratingCount": null,
+    "volumeOptions": [],
+    "notesPyramid": {},
+    "characteristics": {
+      "family": "Морской · акватический"
+    },
+    "relatedSlugs": [
+      "autumn-dore",
+      "eclat-verte",
+      "velvet-noir",
+      "rose-de-damas"
+    ]
+  }
+]

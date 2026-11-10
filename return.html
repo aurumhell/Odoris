@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<!-- ODORIS favicon: start -->
+<link rel="icon" type="image/svg+xml" href="assets/favicon/favicon.svg">
+<link rel="icon" type="image/png" sizes="96x96" href="assets/favicon/favicon-96x96.png">
+<link rel="shortcut icon" href="assets/favicon/favicon.ico">
+<link rel="apple-touch-icon" sizes="180x180" href="assets/favicon/apple-touch-icon.png">
+<link rel="manifest" href="assets/favicon/site.webmanifest">
+<meta name="theme-color" content="#912F40">
+<!-- ODORIS favicon: end -->
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Обращение по вопросу возврата товара ODORIS.">
+    <title>Возврат товара — ODORIS</title>
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="return.css">
+    <script src="components/components.js" defer></script>
+    <script src="return.js" defer></script>
+</head>
+<body>
+    <div id="header"></div>
+    <main class="return-main">
+        <div class="return-container">
+            <nav class="return-breadcrumbs" aria-label="Хлебные крошки">
+                <a href="index.html">Главная</a><span>/</span><a href="profile.html">Личный кабинет</a><span>/</span><span>Возврат товара</span>
+            </nav>
+            <section class="return-hero">
+                <p class="return-eyebrow">ODORIS · ЗАБОТА О КЛИЕНТАХ</p>
+                <h1>Товар не подошёл?<br><em>Давайте разберёмся.</em></h1>
+                <p>Оставьте информацию о заказе и товаре. Обращение поможет службе поддержки проверить возможность возврата и связаться с вами.</p>
+            </section>
+            <section class="return-layout">
+                <div class="return-info">
+                    <p class="return-eyebrow">КАК ЭТО РАБОТАЕТ</p><h2>Три простых шага</h2>
+                    <ol class="return-steps">
+                        <li><span>01</span><div><strong>Укажите заказ</strong><p>Номер заказа и название товара можно посмотреть в истории заказов личного кабинета.</p></div></li>
+                        <li><span>02</span><div><strong>Опишите ситуацию</strong><p>Выберите причину обращения и оставьте удобный способ связи.</p></div></li>
+                        <li><span>03</span><div><strong>Дождитесь ответа</strong><p>Служба поддержки уточнит детали и сообщит дальнейший порядок действий.</p></div></li>
+                    </ol>
+                    <div class="return-policy-note"><strong>Обратите внимание</strong><p>Возможность и условия возврата зависят от обстоятельств покупки, состояния товара и утверждённых правил ODORIS. Страница не обещает автоматическое одобрение возврата.</p></div>
+                </div>
+                <form class="return-form" id="return-request-form">
+                    <p class="return-eyebrow">ФОРМА ОБРАЩЕНИЯ</p><h2>Данные для возврата</h2>
+                    <div class="return-field"><label for="order-number">Номер заказа</label><input id="order-number" name="order" type="text" placeholder="Например, OD-87301" required></div>
+                    <div class="return-field"><label for="product-name">Название товара</label><input id="product-name" name="product" type="text" placeholder="Укажите аромат" required></div>
+                    <div class="return-field"><label for="return-reason">Причина обращения</label><select id="return-reason" name="reason" required><option value="">Выберите причину</option><option>Аромат не подошёл</option><option>Товар повреждён</option><option>Получен другой товар</option><option>Другая причина</option></select></div>
+                    <div class="return-field"><label for="return-details">Комментарий</label><textarea id="return-details" name="details" rows="4" placeholder="Опишите ситуацию и состояние упаковки (необязательно)"></textarea></div>
+                    <div class="return-field"><label for="return-contact">Электронная почта или телефон</label><input id="return-contact" name="contact" type="text" placeholder="Как с вами связаться" required></div>
+                    <button class="return-submit" type="submit">Подготовить обращение <span>↗</span></button>
+                    <p class="return-form-note" id="return-form-note" role="status" aria-live="polite">После нажатия откроется почтовая программа с заполненным обращением. Проверьте письмо и отправьте его вручную.</p>
+                </form>
+            </section>
+            <p class="return-back-link"><a href="profile.html#orders">← Вернуться к истории заказов</a></p>
+        </div>
+    </main>
+    <div id="footer"></div>
+</body>
+</html>

@@ -1,0 +1,82 @@
+/* ODORIS — editorial fragrance selection by films, music, books, games and hobbies */
+main.interests-main { margin-top: var(--header-height); padding: 26px 24px 84px; background: #fffdfa; color: #30272a; }
+.interests-container { width: min(100%, 1420px); margin: 0 auto; }
+.interests-breadcrumbs { display: flex; flex-wrap: wrap; gap: 10px; margin: 0 0 28px; color: #88797a; font-size: 12px; }
+.interests-breadcrumbs a:hover { color: var(--bordo); }
+.interests-hero { position: relative; overflow: hidden; padding: clamp(42px, 6vw, 82px); background: radial-gradient(circle at 82% 28%, rgba(190,142,113,.22), transparent 24%), linear-gradient(115deg,#2e171b 0%,#54232e 52%,#8f2e40 100%); color: #fffaf5; }
+.interests-eyebrow { margin: 0 0 13px; color: #a17c7d; font-size: 10px; font-weight: 700; letter-spacing: .2em; text-transform: uppercase; }
+.interests-hero .interests-eyebrow { color: #e4bfc0; }
+.interests-hero h1 { max-width: 900px; margin: 0 0 22px; color: #fffaf5; font: 400 clamp(42px,6.2vw,78px)/1.02 Georgia,serif; letter-spacing: -.045em; }
+.interests-hero h1 em,.interest-category-heading h2 em,.interests-bottom h2 em { color: #d7a9a7; font-weight: 400; }
+.interests-hero > p:not(.interests-eyebrow) { max-width: 720px; margin: 0; color: #eadadb; font-size: 15px; line-height: 1.85; }
+.interests-hero-meta { display: flex; align-items: center; flex-wrap: wrap; gap: 13px; margin-top: 34px; color: #e9cfd0; font-size: 9px; letter-spacing: .16em; }
+.interests-hero-meta i { width: 3px; height: 3px; border-radius: 50%; background: #d7a9a7; }
+.interest-jump { display: flex; flex-wrap: wrap; gap: 10px; padding: 19px 0; margin: 0 0 24px; border-bottom: 1px solid #e8dcda; }
+.interest-jump a { display: inline-flex; align-items: center; gap: 12px; padding: 10px 14px; color: #59474a; background: #f7f0ed; font: 400 14px Georgia,serif; }
+.interest-jump a span { color: #a27e7f; font: 9px Arial,sans-serif; letter-spacing: .1em; }
+.interest-jump a:hover { color: #fff; background: var(--bordo); }
+.interest-category { padding: 48px 0 16px; scroll-margin-top: 24px; }
+.interest-category-heading { display: grid; grid-template-columns: 1fr auto; column-gap: 28px; align-items: end; margin: 0 0 24px; }
+.interest-category-heading .interests-eyebrow { grid-column: 1 / -1; margin-bottom: 9px; }
+.interest-category-heading h2 { margin: 0; color: #30272a; font: 400 clamp(32px,4vw,46px)/1.1 Georgia,serif; letter-spacing: -.035em; }
+.interest-category-heading h2 em { color: var(--bordo); }
+.interest-category-heading > p:last-child { max-width: 390px; margin: 0; color: #786a6c; font-size: 12px; line-height: 1.7; text-align: right; }
+.interest-grid { display: grid; grid-template-columns: repeat(2,minmax(0,1fr)); gap: 22px; }
+.interest-card { display: grid; grid-template-columns: minmax(145px,.72fr) minmax(0,1.28fr); min-width: 0; background: #fff; border: 1px solid #e8dcda; box-shadow: 0 8px 24px rgba(45,15,22,.045); }
+.interest-card-art { position: relative; display: flex; min-height: 100%; align-items: center; justify-content: center; overflow: hidden; isolation: isolate; color: rgba(255,255,255,.92); background: linear-gradient(135deg,#27323c,#71818a); }
+.interest-card-art::before,.interest-card-art::after { position: absolute; z-index: -1; content: ""; border: 1px solid rgba(255,255,255,.28); border-radius: 50%; }
+.interest-card-art::before { width: 205px; height: 205px; }
+.interest-card-art::after { width: 150px; height: 150px; }
+.interest-card--moon .interest-card-art { background: radial-gradient(circle at 50% 50%,#b69b87,#51434a 55%,#211c2a); }
+.interest-card--desert .interest-card-art { background: radial-gradient(circle at 50% 50%,#d4a16b,#81513c 56%,#3e2929); }
+.interest-card--jazz .interest-card-art { background: radial-gradient(circle at 50% 50%,#9b6b48,#49302e 56%,#201b22); }
+.interest-card--sound .interest-card-art { background: radial-gradient(circle at 50% 50%,#71848a,#38484f 56%,#202831); }
+.interest-card--library .interest-card-art { background: radial-gradient(circle at 50% 50%,#96755f,#51403c 56%,#211d20); }
+.interest-card--novel .interest-card-art { background: radial-gradient(circle at 50% 50%,#78515e,#40303a 56%,#211b24); }
+.interest-card--quest .interest-card-art { background: radial-gradient(circle at 50% 50%,#a07c62,#51414a 56%,#211c2a); }
+.interest-card--explore .interest-card-art { background: radial-gradient(circle at 50% 50%,#839079,#39493f 56%,#1e2c2b); }
+.interest-card--coffee .interest-card-art { background: radial-gradient(circle at 50% 50%,#b08a67,#654636 56%,#30221e); }
+.interest-card--flowers .interest-card-art { background: radial-gradient(circle at 50% 50%,#c99b9d,#95616b 56%,#49313d); }
+.interest-number,.interest-art-caption { position: absolute; color: rgba(255,255,255,.8); font-size: 8px; letter-spacing: .15em; }
+.interest-number { top: 15px; left: 15px; }
+.interest-art-caption { right: 12px; bottom: 15px; left: 12px; text-align: center; }
+.interest-glyph { color: rgba(255,255,255,.88); font: 400 60px/1 Georgia,serif; text-shadow: 0 8px 22px rgba(0,0,0,.18); }
+.interest-card-content { display: flex; flex-direction: column; align-items: flex-start; padding: 22px 22px 23px; }
+.interest-match { margin: 0 0 7px; color: #9a7778; font-size: 8px; font-weight: 700; letter-spacing: .16em; text-transform: uppercase; }
+.interest-card-content h3 { margin: 0 0 10px; color: #30272a; font: 400 clamp(20px,1.8vw,25px)/1.15 Georgia,serif; }
+.interest-story { margin: 0; color: #786a6c; font-size: 11px; line-height: 1.7; }
+.interest-fragrance { width: 100%; margin-top: auto; padding-top: 18px; }
+.interest-brand { margin: 0 0 5px; color: #9b7779; font-size: 8px; font-weight: 700; letter-spacing: .16em; }
+.interest-fragrance h4 { margin: 0 0 7px; color: #8f2e40; font: 400 21px/1.2 Georgia,serif; }
+.interest-notes { margin: 0; color: #6f6263; font-size: 10px; line-height: 1.65; }
+.interest-product-link { display: inline-flex; align-items: center; gap: 10px; margin-top: 16px; padding-bottom: 4px; border-bottom: 1px solid #a9787c; color: #8f2e40; font-size: 8px; font-weight: 700; letter-spacing: .08em; text-transform: uppercase; }
+.interest-product-link:hover { color: #69202d; }
+.interests-disclaimer { margin-top: 42px; padding: 20px 23px; border-left: 2px solid var(--bordo); background: #f7f0ed; }
+.interests-disclaimer strong { display: block; margin-bottom: 6px; color: #493b3e; font-size: 11px; }
+.interests-disclaimer p { max-width: 1000px; margin: 0; color: #786a6c; font-size: 11px; line-height: 1.7; }
+.interests-bottom { margin-top: 58px; padding: 55px 24px; text-align: center; background: #f3e8e3; }
+.interests-bottom .interests-eyebrow { margin-bottom: 14px; }
+.interests-bottom h2 { margin: 0 0 25px; color: #30272a; font: 400 clamp(33px,4.2vw,48px)/1.12 Georgia,serif; }
+.interests-bottom-actions { display: flex; align-items: center; justify-content: center; flex-wrap: wrap; gap: 24px; }
+.interests-button { display: inline-flex; align-items: center; gap: 22px; padding: 14px 19px; color: #fffaf5; background: var(--bordo); border: 1px solid var(--bordo); font-size: 9px; font-weight: 700; letter-spacing: .1em; text-transform: uppercase; }
+.interests-button:hover { color: #fff; background: var(--bordo-dark); }
+.interests-text-link { color: var(--bordo); font-size: 11px; text-decoration: underline; text-underline-offset: 4px; }
+@media (max-width: 1150px) { .interest-grid { grid-template-columns: 1fr; } .interest-card { grid-template-columns: minmax(180px,.62fr) minmax(0,1.38fr); } }
+@media (max-width: 992px) { main.interests-main { margin-top: 0; } .interest-category-heading { grid-template-columns: 1fr; gap: 10px; } .interest-category-heading > p:last-child { text-align: left; } }
+@media (max-width: 640px) {
+    main.interests-main { padding: 22px 16px 58px; }
+    .interests-hero { padding: 38px 25px; }
+    .interests-hero h1 { font-size: clamp(38px,11vw,54px); }
+    .interests-hero > p:not(.interests-eyebrow) { font-size: 14px; }
+    .interests-hero-meta { line-height: 1.7; gap: 9px; }
+    .interest-jump { gap: 7px; }
+    .interest-jump a { padding: 9px 10px; font-size: 12px; }
+    .interest-category { padding-top: 34px; }
+    .interest-card { grid-template-columns: 1fr; }
+    .interest-card-art { min-height: 155px; }
+    .interest-glyph { font-size: 52px; }
+    .interest-card-content { padding: 21px 19px 22px; }
+    .interest-story { font-size: 12px; }
+    .interest-notes { font-size: 11px; }
+    .interests-bottom { margin-top: 42px; padding: 42px 18px; }
+}

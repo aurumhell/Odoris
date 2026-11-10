@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Карточка аромата ODORIS: описание, ноты, характеристики и рекомендации.">
+    <title>Аромат — ODORIS</title>
+    <link rel="icon" type="image/svg+xml" href="assets/favicon/favicon.svg">
+    <link rel="icon" type="image/png" sizes="96x96" href="assets/favicon/favicon-96x96.png">
+    <link rel="shortcut icon" href="assets/favicon/favicon.ico">
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/favicon/apple-touch-icon.png">
+    <link rel="manifest" href="assets/favicon/site.webmanifest">
+    <meta name="theme-color" content="#912F40">
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="product-page.css">
+    <script src="components/components.js" defer></script>
+    <script src="js/product-page.js" defer></script>
+</head>
+<body class="product-page-body">
+    <div id="header"></div>
+
+    <main class="product-page-main">
+        <div class="product-page-container">
+            <nav class="product-breadcrumbs" aria-label="Хлебные крошки">
+                <a href="index.html">Главная</a><span>/</span>
+                <a id="product-category-link" href="collection.html">Каталог</a><span>/</span>
+                <span id="product-breadcrumb-name">Аромат</span>
+            </nav>
+
+            <div class="product-loading" id="product-loading">Загружаем карточку аромата…</div>
+            <section class="product-not-found" id="product-not-found" hidden>
+                <h1>Аромат не найден</h1>
+                <p>Проверьте адрес страницы или вернитесь в каталог ODORIS.</p>
+                <a href="collection.html" class="product-primary-link">Перейти в каталог</a>
+            </section>
+
+            <article class="perfume-detail" id="perfume-detail" hidden>
+                <section class="perfume-top-layout">
+                    <div class="perfume-gallery">
+                        <div class="perfume-photo-frame">
+                            <img id="perfume-image" src="assets/products/placeholder.svg" alt="Флакон парфюма">
+                        </div>
+                    </div>
+
+                    <div class="perfume-information">
+                        <div class="perfume-information-topline">
+                            <div class="perfume-rating" id="perfume-rating" hidden>
+                                <span id="perfume-rating-count"></span>
+                                <span class="perfume-stars" aria-label="Рейтинг">★★★★★</span>
+                                <span>Отзывов</span>
+                            </div>
+                            <button class="perfume-edit-button" id="perfume-edit-button" type="button"
+                                    aria-label="Редактировать описание" title="Редактировать">
+                                <span aria-hidden="true">✎</span>
+                            </button>
+                        </div>
+
+                        <p class="perfume-brand" id="perfume-brand"></p>
+                        <h1 class="perfume-name" id="perfume-name">Éclat Verte</h1>
+                        <p class="perfume-subtitle" id="perfume-subtitle">Зеленая гармония</p>
+                        <p class="perfume-price" id="perfume-price" hidden></p>
+                        <p class="perfume-article" id="perfume-article" hidden>Артикул: <span></span></p>
+
+                        <div class="perfume-volume-block" id="perfume-volume-block">
+                            <span class="perfume-field-label">Объем:</span>
+                            <div class="perfume-volume-options" id="perfume-volume-options"></div>
+                        </div>
+
+                        <div class="perfume-actions">
+                            <button class="perfume-buy-button" id="perfume-buy-button" type="button">Купить</button>
+                            <button class="perfume-cart-button" id="perfume-cart-button" type="button">В корзину</button>
+                            <span class="perfume-action-mark" aria-hidden="true">♙</span>
+                        </div>
+                        <p class="perfume-action-message" id="perfume-action-message" role="status" aria-live="polite"></p>
+
+                        <div class="perfume-description-block">
+                            <label class="perfume-field-label" for="perfume-description">Описание:</label>
+                            <div class="perfume-editable" id="perfume-description" tabindex="0"></div>
+                        </div>
+
+                        <div class="perfume-accordions">
+                            <details class="perfume-accordion" id="perfume-notes-accordion">
+                                <summary><span>Ноты аромата:</span><span class="perfume-accordion-icon" aria-hidden="true">+</span></summary>
+                                <div class="perfume-accordion-content" id="perfume-notes-content"></div>
+                            </details>
+                            <details class="perfume-accordion" id="perfume-characteristics-accordion">
+                                <summary><span>Характеристика:</span><span class="perfume-accordion-icon" aria-hidden="true">+</span></summary>
+                                <div class="perfume-accordion-content" id="perfume-characteristics-content"></div>
+                            </details>
+                        </div>
+                        <p class="perfume-edit-status" id="perfume-edit-status" role="status" aria-live="polite"></p>
+                    </div>
+                </section>
+
+                <section class="perfume-related-section" aria-labelledby="related-title">
+                    <h2 id="related-title">Также покупают вместе</h2>
+                    <div class="perfume-related-grid" id="perfume-related-grid"></div>
+                </section>
+
+                <div class="perfume-save-row">
+                    <button class="perfume-save-button" id="perfume-save-button" type="button">Сохранить изменения</button>
+                </div>
+
+                <p class="perfume-editorial-note" id="perfume-editorial-note" hidden>
+                    Связь аромата с фильмами, музыкой, книгами, играми и хобби — редакционная рекомендация ODORIS,
+                    а не официальная коллаборация с правообладателями.
+                </p>
+            </article>
+        </div>
+    </main>
+
+    <div id="footer"></div>
+</body>
+</html>
