@@ -1,38 +1,35 @@
 <header class="site-header">
-    <!-- Верхний ярус: Логотип, Поиск, Город, Кнопки действий -->
     <div class="header-top">
         <div class="header-container">
             <a class="header-logo" href="index.html">
                 <img src="assets/logo.png" alt="ODORIS">
             </a>
 
-            <form class="search-box" action="collection.html" method="get" role="search">
+            <form class="search-box" action="collection.html" data-odoris-global-search method="get" role="search">
                 <img class="search-inline-icon" src="assets/search.png" alt="" aria-hidden="true">
-                <input type="search" name="q" placeholder="Бренд, аромат или нота" aria-label="Поиск по каталогу"
-                       autocomplete="off">
+                <input type="search" name="q" placeholder="Бренд, аромат или нота" aria-label="Поиск по каталогу" aria-autocomplete="list" aria-expanded="false" autocomplete="off">
                 <button class="search-button" type="submit">Найти</button>
             </form>
 
-            <a href="#" class="delivery-link" title="Выбор города">
+            <button type="button" class="delivery-link" data-address-trigger title="Изменить адрес доставки">
                 <img src="assets/geo.png" alt="" aria-hidden="true">
-                <span>Москва</span>
-            </a>
+                <span data-current-city>Москва</span>
+            </button>
 
             <div class="header-actions">
-                <a href="favorite.html" class="header-action" title="Избранное">
-                    <img src="assets/favorite.png" alt="Избранное">
+                <a href="favorite.html" class="header-action" title="Избранное" aria-label="Избранное">
+                    <img src="assets/favorite.png" alt="">
                 </a>
-                <a href="corzina.html" class="header-action" title="Корзина">
-                    <img src="assets/corz.png" alt="Корзина">
+                <a href="corzina.html" class="header-action" title="Корзина" aria-label="Корзина">
+                    <img src="assets/corz.png" alt="">
                 </a>
-                <a href="profile.html" class="header-action" title="Личный кабинет">
-                    <img src="assets/profile.png" alt="Профиль">
+                <a href="auth.html" class="header-action" id="header-account-link" title="Войти или зарегистрироваться" aria-label="Аккаунт">
+                    <img src="assets/profile.png" alt="">
                 </a>
             </div>
         </div>
     </div>
 
-    <!-- Нижний ярус: Навигация каталога -->
     <nav class="header-bottom">
         <div class="header-container">
             <ul class="nav-links">
@@ -64,7 +61,7 @@
                 <li class="nav-item"><a class="nav-link" href="hit.html">Хиты</a></li>
                 <li class="nav-item"><a class="nav-link" href="nis.html">Нишевая</a></li>
                 <li class="nav-item"><a class="nav-link" href="about.html">О нас</a></li>
-                <li class="nav-item"><a class="nav-link" href="#">Доставка и оплата</a></li>
+                <li class="nav-item"><a class="nav-link" href="return.html">Доставка и возврат</a></li>
             </ul>
         </div>
     </nav>

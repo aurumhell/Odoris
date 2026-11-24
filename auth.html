@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#912F40">
+    <title>Вход и регистрация — ODORIS</title>
+    <link rel="icon" type="image/svg+xml" href="assets/favicon/favicon.svg">
+    <link rel="stylesheet" href="index.css">
+    <script src="components/components.js" defer></script>
+</head>
+<body class="d-flex flex-column min-vh-100">
+    <div id="header"></div>
+    <main class="odoris-auth-page">
+        <section class="odoris-auth-card" aria-labelledby="auth-title">
+            <p class="odoris-auth-eyebrow">ODORIS · PERSONAL SPACE</p>
+            <h1 id="auth-title">Добро пожаловать</h1>
+            <p class="odoris-auth-lead">Войдите, чтобы сохранять любимые ароматы и управлять своим профилем.</p>
+
+            <div class="odoris-auth-tabs" role="tablist" aria-label="Способ входа">
+                <button type="button" class="is-active" data-auth-tab="login" role="tab" aria-selected="true">Вход</button>
+                <button type="button" data-auth-tab="register" role="tab" aria-selected="false">Регистрация</button>
+            </div>
+
+            <form id="odoris-login-form" class="odoris-auth-form">
+                <label for="login-email">Электронная почта</label>
+                <input id="login-email" name="email" type="email" autocomplete="username" placeholder="name@example.com" required>
+                <label for="login-password">Пароль</label>
+                <input id="login-password" name="password" type="password" autocomplete="current-password" placeholder="Ваш пароль" required>
+                <button class="odoris-auth-submit" type="submit">Войти в аккаунт</button>
+            </form>
+
+            <form id="odoris-register-form" class="odoris-auth-form" hidden>
+                <label for="register-name">Имя</label>
+                <input id="register-name" name="name" type="text" autocomplete="name" placeholder="Как к вам обращаться" minlength="2" required>
+                <label for="register-email">Электронная почта</label>
+                <input id="register-email" name="email" type="email" autocomplete="email" placeholder="name@example.com" required>
+                <label for="register-password">Пароль</label>
+                <input id="register-password" name="password" type="password" autocomplete="new-password" placeholder="Не менее 8 символов" minlength="8" required>
+                <label for="register-password-confirm">Повторите пароль</label>
+                <input id="register-password-confirm" name="passwordConfirm" type="password" autocomplete="new-password" placeholder="Повторите пароль" minlength="8" required>
+                <button class="odoris-auth-submit" type="submit">Создать аккаунт</button>
+            </form>
+            <p id="odoris-auth-message" class="odoris-auth-message" role="status" aria-live="polite"></p>
+
+            <aside class="odoris-admin-access-note">
+                <strong>Вход администратора</strong>
+                <span>Логин: admin@odoris.ru</span>
+                <span>Пароль: Odoris2026!</span>
+            </aside>
+        </section>
+    </main>
+    <div id="footer"></div>
+</body>
+</html>

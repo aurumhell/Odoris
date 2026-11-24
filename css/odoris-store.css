@@ -1,0 +1,699 @@
+/* ODORIS storefront additions */
+.delivery-link {
+    border: 0;
+    padding: 0;
+    background: transparent;
+    color: inherit;
+    font: inherit;
+    cursor: pointer;
+}
+.delivery-link:hover span { text-decoration: underline; text-underline-offset: 4px; }
+.header-action { position: relative; }
+.odoris-counter {
+    position: absolute;
+    top: -7px;
+    right: -8px;
+    display: grid;
+    min-width: 18px;
+    height: 18px;
+    padding: 0 4px;
+    place-items: center;
+    border-radius: 20px;
+    background: #912f40;
+    color: #fff;
+    font: 10px/1 Arial, sans-serif;
+}
+.odoris-counter[hidden] { display: none; }
+.odoris-card-shell { position: relative; }
+.odoris-card-actions {
+    position: absolute;
+    z-index: 5;
+    top: 12px;
+    right: 12px;
+    display: flex;
+    gap: 7px;
+}
+.odoris-icon-action {
+    display: inline-grid;
+    width: 36px;
+    height: 36px;
+    place-items: center;
+    padding: 0;
+    border: 1px solid rgba(145,47,64,.2);
+    border-radius: 50%;
+    background: rgba(255,254,250,.94);
+    color: #912f40;
+    font: 22px/1 Arial, sans-serif;
+    cursor: pointer;
+    box-shadow: 0 4px 14px rgba(43,25,29,.09);
+    transition: transform .18s ease, background .18s ease, color .18s ease;
+}
+.odoris-icon-action:hover { transform: translateY(-2px); background: #912f40; color: #fff; }
+.odoris-icon-action.is-active { color: #912f40; }
+.odoris-icon-action.is-added { color: #fff; background: #436b50; border-color: #436b50; }
+.odoris-icon-action--cart { font-size: 25px; font-weight: 300; }
+.perfume-favorite-button {
+    min-height: 39px;
+    padding: 8px 14px;
+    border: 1px solid #d7c9c8;
+    border-radius: 4px;
+    background: #fff;
+    color: #912f40;
+    font: 13px Georgia, serif;
+    cursor: pointer;
+}
+.perfume-favorite-button:hover { background: #f7eeee; border-color: #912f40; }
+.perfume-favorite-button.is-active { background: #f7eeee; }
+.perfume-edit-button[hidden], .perfume-save-row[hidden] { display: none !important; }
+
+.odoris-modal-backdrop {
+    position: fixed;
+    z-index: 2000;
+    inset: 0;
+    display: grid;
+    place-items: center;
+    padding: 22px;
+    background: rgba(23,17,19,.55);
+    backdrop-filter: blur(4px);
+}
+.odoris-modal {
+    position: relative;
+    width: min(100%, 510px);
+    max-height: min(90vh, 780px);
+    overflow: auto;
+    padding: 34px clamp(22px, 5vw, 42px) 30px;
+    background: #fffefa;
+    border: 1px solid #e4d9d6;
+    box-shadow: 0 24px 80px rgba(25,14,17,.24);
+}
+.odoris-modal h2 { margin: 0 0 22px; color: #282226; font: 400 32px/1.15 Georgia, serif; }
+.odoris-modal > label { display: block; margin: 0 0 7px; color: #62585a; font: 12px Arial, sans-serif; }
+.odoris-modal select {
+    width: 100%; min-height: 42px; margin-bottom: 8px; padding: 9px 11px;
+    border: 1px solid #ddd2d0; background: #fff; color: #332b2e;
+}
+.odoris-modal-close {
+    position: absolute; top: 10px; right: 13px; width: 34px; height: 34px;
+    border: 0; background: transparent; color: #716568; font: 29px/1 Arial, sans-serif; cursor: pointer;
+}
+.odoris-auth-form { display: grid; gap: 9px; margin-top: 14px; }
+.odoris-auth-form label { margin: 4px 0 0; color: #51474a; font: 12px Arial, sans-serif; }
+.odoris-auth-form input, .odoris-auth-form select {
+    width: 100%; min-height: 43px; padding: 10px 12px; border: 1px solid #ded5d2;
+    border-radius: 2px; background: #fff; color: #2f292b; font: 14px Arial, sans-serif;
+}
+.odoris-auth-form input:focus, .odoris-auth-form select:focus { outline: 2px solid rgba(145,47,64,.18); border-color: #912f40; }
+.odoris-auth-submit {
+    min-height: 46px; margin-top: 12px; padding: 11px 18px; border: 1px solid #912f40;
+    background: #912f40; color: #fff; font: 13px Georgia, serif; cursor: pointer;
+    transition: background .2s ease, transform .2s ease, box-shadow .2s ease;
+}
+.odoris-auth-submit:hover { background: #702332; }
+.odoris-text-button { padding: 5px 0; border: 0; background: transparent; color: #912f40; font: 12px Arial, sans-serif; cursor: pointer; }
+.odoris-text-button:hover { text-decoration: underline; text-underline-offset: 3px; }
+.odoris-check-label { display: flex !important; align-items: center; gap: 9px; margin: 4px 0 !important; }
+.odoris-check-label input { width: 16px; min-height: 16px; accent-color: #912f40; }
+.odoris-auth-message { min-height: 18px; margin: 10px 0 0; color: #526c55; font: 12px/1.5 Arial, sans-serif; }
+.odoris-auth-message.is-error { color: #a52f3e; }
+
+.odoris-store-grid { display: grid; grid-template-columns: repeat(3, minmax(0,1fr)); gap: 20px; }
+.odoris-store-card { position: relative; min-width: 0; padding-bottom: 15px; border: 1px solid #e6ddda; background: #fff; }
+.odoris-store-card__link { display: flex; height: 100%; flex-direction: column; padding: 14px; color: inherit; text-decoration: none; }
+.odoris-store-card__link:hover { color: inherit; }
+.odoris-store-card__link img { width: 100%; height: 220px; object-fit: contain; background: linear-gradient(145deg,#fffdfa,#f6edeb); }
+.odoris-store-card__link h2 { margin: 16px 0 5px; color: #2d2529; font: 400 21px/1.2 Georgia, serif; }
+.odoris-store-card__link p { flex: 1; margin: 0 0 12px; color: #807477; font: 12px/1.5 Arial, sans-serif; }
+.odoris-store-card__link strong { color: #912f40; font: 600 14px Arial, sans-serif; }
+.odoris-store-card__actions { display: flex; justify-content: flex-end; gap: 8px; padding: 0 14px; }
+.odoris-store-card .odoris-text-button { margin: 9px 14px 0; }
+.odoris-utility-content { margin-top: 24px; }
+.odoris-cart-list { display: grid; gap: 12px; }
+.odoris-cart-row {
+    display: grid; grid-template-columns: 108px minmax(0,1fr) auto auto; align-items: center;
+    gap: 18px; padding: 15px; border: 1px solid #e6ddda; background: #fff;
+}
+.odoris-cart-row > img { width: 108px; height: 110px; object-fit: contain; background: #faf5f3; }
+.odoris-cart-row__info { min-width: 0; }
+.odoris-cart-row__info > a { color: #30272b; font: 400 21px Georgia, serif; text-decoration: none; }
+.odoris-cart-row__info > a:hover { color: #912f40; }
+.odoris-cart-row__info p { margin: 6px 0 12px; color: #877b7e; font: 12px Arial, sans-serif; }
+.odoris-quantity { display: inline-flex; align-items: center; gap: 12px; border: 1px solid #e2d8d6; }
+.odoris-quantity button { width: 31px; height: 30px; border: 0; background: #fbf7f5; color: #912f40; cursor: pointer; font: 18px Arial, sans-serif; }
+.odoris-quantity span { min-width: 14px; text-align: center; font: 13px Arial, sans-serif; }
+.odoris-cart-row__price { white-space: nowrap; color: #30272b; font: 600 15px Arial, sans-serif; }
+.odoris-cart-summary { display: flex; justify-content: space-between; margin-top: 20px; padding: 22px; background: #f6efed; color: #332a2d; font: 14px Arial, sans-serif; }
+.odoris-cart-summary strong { color: #912f40; font-size: 19px; }
+.odoris-profile-login { margin-top: 25px; }
+.odoris-profile-status { margin: 10px 0 0; color: #55745b; font: 12px Arial, sans-serif; }
+
+.odoris-auth-page { flex: 1 0 auto; display: grid; place-items: center; padding: 48px 20px 74px; background: #f8f3f1; }
+.odoris-auth-card { width: min(100%, 510px); padding: clamp(26px, 5vw, 48px); background: #fffefa; border: 1px solid #e8dedb; box-shadow: 0 18px 55px rgba(54,32,38,.08); }
+.odoris-auth-eyebrow { margin: 0 0 10px; color: #912f40; font: 700 10px Arial, sans-serif; letter-spacing: .2em; }
+.odoris-auth-card h1 { margin: 0; color: #292326; font: 400 clamp(34px,5vw,46px)/1.1 Georgia, serif; }
+.odoris-auth-lead { margin: 13px 0 25px; color: #827679; font: 13px/1.6 Arial, sans-serif; }
+.odoris-auth-tabs { display: grid; grid-template-columns: 1fr 1fr; border-bottom: 1px solid #e7dcda; }
+.odoris-auth-tabs button { padding: 12px 8px; border: 0; border-bottom: 2px solid transparent; background: transparent; color: #887b7e; cursor: pointer; font: 13px Arial, sans-serif; }
+.odoris-auth-tabs button.is-active { border-color: #912f40; color: #912f40; }
+.odoris-auth-card .odoris-auth-form { margin-top: 19px; }
+.odoris-auth-card .odoris-auth-form[hidden] { display: none; }
+.odoris-admin-access-note { display: grid; gap: 5px; margin-top: 26px; padding: 14px 16px; border-left: 2px solid #c8a9a9; background: #f8f2f0; color: #685b5e; font: 11px/1.5 Arial, sans-serif; }
+.odoris-admin-access-note strong { color: #45383c; font-size: 12px; }
+.odoris-admin-access-note small { margin-top: 5px; color: #8a7f81; font-size: 10px; }
+.odoris-auth-signed-in { margin: 14px 0; padding: 11px; background: #f6efed; color: #66595c; font: 12px/1.5 Arial, sans-serif; }
+.odoris-auth-signed-in a { color: #912f40; }
+
+@media (max-width: 760px) {
+    .odoris-store-grid { grid-template-columns: repeat(2, minmax(0,1fr)); gap: 12px; }
+    .odoris-store-card__link { padding: 10px; }
+    .odoris-store-card__link img { height: 170px; }
+    .odoris-store-card__link h2 { font-size: 17px; }
+    .odoris-card-actions { top: 8px; right: 8px; gap: 5px; }
+    .odoris-icon-action { width: 32px; height: 32px; font-size: 20px; }
+    .odoris-cart-row { grid-template-columns: 76px minmax(0,1fr); gap: 12px; }
+    .odoris-cart-row > img { width: 76px; height: 90px; }
+    .odoris-cart-row__price { grid-column: 2; }
+    .odoris-cart-row > .odoris-text-button { grid-column: 2; justify-self: start; }
+}
+@media (max-width: 460px) {
+    .odoris-store-grid { grid-template-columns: 1fr 1fr; }
+    .odoris-store-card__link img { height: 145px; }
+    .odoris-cart-row__info > a { font-size: 17px; }
+}
+
+/* The pencil is hidden for every visitor unless the admin session is active. */
+body:not(.odoris-is-admin) #perfume-edit-button,
+body:not(.odoris-is-admin) .perfume-save-row { display: none !important; }
+body.odoris-is-admin #perfume-edit-button { display: grid !important; }
+body.odoris-is-admin .perfume-save-row { display: flex !important; }
+.product-page-body.is-editing [contenteditable="true"] {
+    outline: 1px dashed #912f40;
+    outline-offset: 3px;
+    background: #fffaf7;
+}
+.profile-grid[hidden] { display: none !important; }
+
+/* ========================================================================== 
+   ODORIS — PREMIUM FINISH & HEADER COUNTERS
+   Palette: the existing ODORIS wine, ivory and muted neutral tones.
+   This block intentionally loads after the project's original styles.
+   ========================================================================== */
+:root {
+    --odoris-wine-deep: var(--bordo-dark, #7C202E);
+    --odoris-wine-mid: var(--bordo, #912F40);
+    --odoris-line: var(--line, #E4D5D8);
+    --odoris-ivory: var(--paper, #FFFFFA);
+    --odoris-surface: var(--paper-soft, #F7EFF0);
+    --odoris-shadow: 0 14px 38px rgba(45, 15, 22, .10);
+}
+
+/* Keep the header aligned with the footer while retaining subtle finish and motion. */
+header.site-header {
+    /* Match the footer exactly: --bordo-dark is #7C202E in index.css. */
+    background: var(--bordo-dark, #7C202E) !important;
+    background-image: none !important;
+    -webkit-backdrop-filter: blur(14px) saturate(108%);
+    backdrop-filter: blur(14px) saturate(108%);
+    border-bottom: 1px solid rgba(255, 255, 250, .14);
+    box-shadow: 0 8px 26px rgba(35, 10, 19, .16);
+    isolation: isolate;
+}
+
+.site-header .header-top {
+    background: transparent;
+}
+
+.site-header .header-logo img {
+    filter: drop-shadow(0 2px 5px rgba(15, 5, 9, .16));
+}
+
+.site-header .search-box {
+    border-color: rgba(228, 213, 216, .58);
+    border-radius: 3px;
+    background: rgba(255, 255, 250, .07);
+}
+
+.site-header .search-box:hover,
+.site-header .search-box:focus-within {
+    border-color: var(--paper, #FFFFFA);
+    background: var(--paper, #FFFFFA);
+    box-shadow: 0 5px 18px rgba(26, 10, 15, .2);
+}
+
+.site-header .search-button {
+    color: var(--bordo, #912F40);
+    background: var(--paper, #FFFFFA);
+    border-radius: 2px;
+}
+
+.site-header .search-button:hover {
+    color: #fffaf2;
+    background: var(--bordo-dark, #7C202E);
+}
+
+.site-header .delivery-link {
+    min-height: 38px;
+    border: 1px solid transparent;
+    border-radius: 2px;
+    transition: border-color .2s ease, background .2s ease, color .2s ease;
+}
+
+.site-header .delivery-link:hover,
+.site-header .delivery-link:focus-visible {
+    color: var(--paper, #FFFFFA);
+    border-color: rgba(228, 213, 216, .38);
+    background: rgba(255, 255, 250, .06);
+    outline: none;
+}
+
+.site-header .header-actions {
+    gap: 9px;
+    overflow: visible;
+}
+
+.site-header .header-action {
+    z-index: 1;
+    overflow: visible;
+    border-color: rgba(228, 213, 216, .18);
+    background: rgba(255, 255, 250, .035);
+}
+
+.site-header .header-action:hover,
+.site-header .header-action:focus-visible,
+.site-header .header-action.active {
+    border-color: rgba(228, 213, 216, .55);
+    background: rgba(255, 255, 250, .12);
+    outline: none;
+}
+
+.site-header .header-action img {
+    filter: drop-shadow(0 1px 2px rgba(0, 0, 0, .16));
+    transition: transform .2s ease, filter .2s ease;
+}
+
+.site-header .header-action:hover img {
+    transform: translateY(-1px);
+}
+
+/* Keep the counter readable against the dark-wine header. */
+.site-header .header-action .odoris-counter {
+    position: absolute;
+    z-index: 5;
+    top: -5px;
+    right: -5px;
+    display: grid;
+    min-width: 21px;
+    width: auto;
+    height: 21px;
+    padding: 0 5px;
+    place-items: center;
+    border: 2px solid rgba(124, 32, 46, .98);
+    border-radius: 999px;
+    background: #fffefa;
+    color: #912f40;
+    box-shadow: 0 2px 8px rgba(17, 7, 12, .28), 0 0 0 1px rgba(255, 255, 250, .72);
+    font: 700 10px/1 Arial, sans-serif;
+    font-variant-numeric: tabular-nums;
+    letter-spacing: -.02em;
+    white-space: nowrap;
+    pointer-events: none;
+}
+
+.site-header .header-action .odoris-counter[hidden] {
+    display: none !important;
+}
+
+.site-header .header-bottom {
+    border-top-color: rgba(255, 255, 250, .16);
+    background: transparent;
+}
+
+.site-header .nav-links {
+    gap: clamp(2px, .45vw, 8px);
+}
+
+.site-header .nav-link {
+    position: relative;
+    padding: 7px 15px;
+    color: rgba(255, 255, 250, .94) !important;
+    font-size: 10px;
+    font-weight: 600;
+    letter-spacing: .105em;
+    text-transform: uppercase;
+}
+
+.site-header .nav-link::after {
+    position: absolute;
+    right: 15px;
+    bottom: 2px;
+    left: 15px;
+    height: 1px;
+    background: var(--paper, #FFFFFA);
+    content: "";
+    transform: scaleX(0);
+    transform-origin: center;
+    transition: transform .2s ease;
+}
+
+.site-header .nav-link:hover::after,
+.site-header .nav-item:focus-within > .nav-link::after {
+    transform: scaleX(1);
+}
+
+.site-header .nav-link:hover,
+.site-header .nav-item:focus-within > .nav-link,
+.site-header .nav-link.active {
+    color: var(--paper, #FFFFFA) !important;
+    background: rgba(255, 255, 250, .06);
+}
+
+.site-header .catalog-dropdown {
+    border-top: 2px solid var(--bordo, #912F40);
+    box-shadow: 0 20px 46px rgba(34, 13, 20, .2);
+}
+
+.site-header .catalog-column h5 {
+    color: var(--bordo, #912F40);
+}
+
+/* Premium product cards: quiet edges, warm paper and soft lift on hover. */
+.odoris-store-card,
+.catalog-card-wrap .recommendation-card {
+    border: 1px solid var(--line, #E4D5D8);
+    background: var(--paper, #FFFFFA);
+    box-shadow: 0 5px 18px rgba(56, 34, 39, .035);
+    transition: border-color .25s ease, box-shadow .25s ease, transform .25s ease;
+}
+
+.odoris-store-card:hover,
+.catalog-card-wrap:hover .recommendation-card {
+    border-color: var(--bordo, #912F40);
+    box-shadow: var(--odoris-shadow);
+    transform: translateY(-3px);
+}
+
+.odoris-store-card__link img,
+.recommendation-img-wrap {
+    background: var(--paper-soft, #F7EFF0);
+}
+
+.odoris-store-card__link h2,
+.recommendation-card h3 {
+    letter-spacing: -.015em;
+}
+
+.odoris-store-card__link strong,
+.recommendation-card strong {
+    color: var(--bordo, #912F40);
+}
+
+.odoris-icon-action {
+    border-color: var(--line, #E4D5D8);
+    background: var(--paper, #FFFFFA);
+    box-shadow: 0 6px 18px rgba(45, 24, 30, .12);
+}
+
+.odoris-icon-action:hover {
+    border-color: var(--bordo, #912F40);
+    background: var(--bordo, #912F40);
+    color: var(--paper, #FFFFFA);
+}
+
+.odoris-icon-action.is-active {
+    background: var(--paper-soft, #F7EFF0);
+    color: var(--bordo, #912F40);
+    animation: odoris-pop .24s ease;
+}
+
+.odoris-icon-action.is-added {
+    background: #436b50;
+    border-color: #436b50;
+    color: #fff;
+    animation: odoris-pop .28s ease;
+}
+
+/* Refined controls, address/auth dialogs and utility pages. */
+.odoris-modal,
+.odoris-auth-card {
+    border-color: var(--line, #E4D5D8);
+    box-shadow: 0 28px 90px rgba(35, 15, 22, .22);
+}
+
+.odoris-auth-page {
+    background: var(--page, #FFFFFA);
+}
+
+.odoris-auth-submit {
+    border-color: var(--bordo, #912F40);
+    background: var(--bordo, #912F40);
+    letter-spacing: .07em;
+    text-transform: uppercase;
+}
+
+.odoris-auth-submit:hover {
+    background: var(--bordo-dark, #7C202E);
+    transform: translateY(-1px);
+    box-shadow: 0 5px 14px rgba(45, 15, 22, .14);
+}
+.odoris-auth-submit:active { transform: translateY(0) scale(.99); }
+
+.odoris-cart-row {
+    border-color: var(--line, #E4D5D8);
+    background: var(--paper, #FFFFFA);
+    box-shadow: 0 4px 16px rgba(56, 34, 39, .035);
+    transition: transform .2s ease, border-color .2s ease, box-shadow .2s ease;
+}
+.odoris-cart-row:hover {
+    transform: translateY(-1px);
+    border-color: var(--bordo, #912F40);
+    box-shadow: 0 9px 22px rgba(45, 15, 22, .08);
+}
+
+.odoris-cart-summary {
+    border: 1px solid var(--line, #E4D5D8);
+    background: var(--paper-soft, #F7EFF0);
+}
+
+.odoris-cart-summary strong {
+    color: var(--bordo, #912F40);
+}
+
+/* Focus states remain visible for keyboard users. */
+.site-header a:focus-visible,
+.site-header button:focus-visible,
+.odoris-icon-action:focus-visible,
+.odoris-text-button:focus-visible {
+    outline: 2px solid var(--paper, #FFFFFA);
+    outline-offset: 3px;
+}
+
+@media (max-width: 760px) {
+    .site-header .header-action .odoris-counter {
+        top: -3px;
+        right: -3px;
+        min-width: 19px;
+        height: 19px;
+        padding: 0 4px;
+        font-size: 9px;
+    }
+
+    .site-header .nav-link {
+        padding: 7px 10px;
+        font-size: 9px;
+        letter-spacing: .065em;
+    }
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .site-header *,
+    .odoris-store-card,
+    .catalog-card-wrap .recommendation-card,
+    .odoris-icon-action {
+        scroll-behavior: auto !important;
+        transition-duration: .01ms !important;
+        animation-duration: .01ms !important;
+    }
+}
+
+
+/* Crisp, lightweight SVG actions instead of small text glyphs. */
+.odoris-icon-action {
+    display: inline-grid;
+    place-items: center;
+}
+.odoris-icon-action svg,
+.perfume-favorite-button svg {
+    display: block;
+    width: 19px;
+    height: 19px;
+    fill: none;
+    stroke: currentColor;
+    stroke-width: 1.65;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+}
+.odoris-icon-action--favorite.is-active svg,
+.perfume-favorite-button.is-active svg {
+    fill: currentColor;
+    stroke-width: 1.35;
+}
+.odoris-icon-action--cart svg { width: 18px; height: 18px; }
+.odoris-icon-action.is-added { color: #fff; background: #436b50; border-color: #436b50; }
+.perfume-favorite-button {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+}
+.perfume-favorite-button svg { width: 18px; height: 18px; }
+
+/* Matte translucent header: do not shift the original wine hue. */
+@media (prefers-reduced-transparency: reduce) {
+    header.site-header {
+        background: var(--bordo-dark, #7C202E) !important;
+        -webkit-backdrop-filter: none;
+        backdrop-filter: none;
+    }
+}
+
+
+/* Hybrid product search: suggestions preserve the ODORIS wine/ivory palette. */
+.site-header .search-box.odoris-search-form {
+    position: relative;
+    z-index: 1005;
+    isolation: isolate;
+}
+.odoris-search-panel {
+    position: absolute;
+    z-index: 1100;
+    top: calc(100% + 10px);
+    left: 0;
+    right: 0;
+    max-height: min(68vh, 520px);
+    overflow: auto;
+    padding: 8px;
+    border: 1px solid var(--line, #E4D5D8);
+    background: var(--paper, #FFFFFA);
+    color: var(--ink, #292326);
+    box-shadow: 0 18px 46px rgba(35, 10, 19, .2);
+    transform-origin: top center;
+    animation: odoris-search-in .18s ease-out both;
+}
+.odoris-search-panel[hidden] { display: none !important; }
+.odoris-search-heading,
+.odoris-search-footer {
+    padding: 8px 11px;
+    color: var(--muted, #776B6D);
+    font: 10px/1.4 Arial, sans-serif;
+    letter-spacing: .08em;
+    text-transform: uppercase;
+}
+.odoris-search-result {
+    display: grid;
+    grid-template-columns: 58px minmax(0, 1fr);
+    align-items: center;
+    gap: 12px;
+    min-height: 76px;
+    padding: 8px 10px;
+    color: var(--ink, #292326) !important;
+    text-decoration: none !important;
+    border-bottom: 1px solid rgba(228, 213, 216, .7);
+    transition: background .16s ease, transform .16s ease;
+}
+.odoris-search-result:last-of-type { border-bottom: 0; }
+.odoris-search-result:hover,
+.odoris-search-result:focus-visible,
+.odoris-search-result.is-active {
+    background: var(--paper-soft, #F7EFF0);
+    outline: none;
+}
+.odoris-search-result:hover { transform: translateX(2px); }
+.odoris-search-result img {
+    display: block;
+    width: 58px;
+    height: 58px;
+    object-fit: contain;
+    background: var(--paper-soft, #F7EFF0);
+}
+.odoris-search-result__copy {
+    display: grid;
+    min-width: 0;
+    gap: 3px;
+}
+.odoris-search-result__copy strong {
+    overflow: hidden;
+    color: var(--ink, #292326);
+    font: 600 13px/1.35 Arial, sans-serif;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+.odoris-search-result__detail,
+.odoris-search-result__price {
+    overflow: hidden;
+    color: var(--muted, #776B6D);
+    font: 11px/1.35 Arial, sans-serif;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+.odoris-search-result__price { color: var(--bordo, #912F40); font-weight: 700; }
+.odoris-search-message {
+    margin: 0;
+    padding: 18px 12px;
+    color: var(--muted, #776B6D);
+    font: 12px/1.5 Arial, sans-serif;
+}
+.odoris-search-footer {
+    border-top: 1px solid var(--line, #E4D5D8);
+    letter-spacing: .02em;
+    text-transform: none;
+}
+
+.odoris-order-empty {
+    display: grid;
+    justify-items: start;
+    gap: 9px;
+    padding: 28px 30px;
+    border: 1px solid var(--line, #E4D5D8);
+    background: var(--paper, #FFFFFA);
+}
+.odoris-order-empty h3 {
+    margin: 0;
+    color: var(--ink, #292326);
+    font: 400 24px/1.2 Georgia, serif;
+}
+.odoris-order-empty p {
+    margin: 0;
+    color: var(--muted, #776B6D);
+    font: 13px/1.6 Arial, sans-serif;
+}
+.odoris-order-empty a {
+    margin-top: 4px;
+    color: var(--bordo, #912F40);
+    font: 700 12px Arial, sans-serif;
+    text-decoration: underline;
+    text-underline-offset: 3px;
+}
+
+@keyframes odoris-search-in {
+    from { opacity: 0; transform: translateY(-6px) scale(.99); }
+    to { opacity: 1; transform: translateY(0) scale(1); }
+}
+@keyframes odoris-pop {
+    0% { transform: scale(.88); }
+    65% { transform: scale(1.07); }
+    100% { transform: scale(1); }
+}
+@media (max-width: 760px) {
+    .site-header .search-box.odoris-search-form { z-index: 1005; }
+    .odoris-search-panel { top: calc(100% + 6px); max-height: 55vh; }
+    .odoris-search-result { grid-template-columns: 50px minmax(0,1fr); min-height: 68px; gap: 10px; }
+    .odoris-search-result img { width: 50px; height: 50px; }
+    .odoris-order-empty { padding: 22px 18px; }
+}
+@media (prefers-reduced-motion: reduce) {
+    .odoris-search-panel { animation: none; }
+    .odoris-search-result,
+    .odoris-store-card,
+    .odoris-cart-row,
+    .odoris-auth-submit,
+    .odoris-icon-action { transition: none !important; animation: none !important; }
+}

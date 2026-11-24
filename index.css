@@ -40,7 +40,7 @@ header.site-header {
     inset: 0 0 auto;
     z-index: 1000;
     height: var(--header-height);
-    background: rgba(145, 47, 64, 0.94);
+    background: rgba(145, 47, 64, 0.82);
     -webkit-backdrop-filter: blur(12px);
     backdrop-filter: blur(12px);
     box-shadow: 0 4px 20px rgba(45, 15, 22, 0.12);
